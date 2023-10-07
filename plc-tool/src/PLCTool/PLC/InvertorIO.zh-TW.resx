@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PLC1I0_0" xml:space="preserve">
+    <value>編碼器A相</value>
+  </data>
+  <data name="PLC1I0_1" xml:space="preserve">
+    <value>編碼器B相</value>
+  </data>
+  <data name="PLC1I0_2" xml:space="preserve">
+    <value>X軸正限位</value>
+  </data>
+  <data name="PLC1I0_3" xml:space="preserve">
+    <value>X軸負限位</value>
+  </data>
+  <data name="PLC1I0_4" xml:space="preserve">
+    <value>X軸原點</value>
+  </data>
+  <data name="PLC1I0_5" xml:space="preserve">
+    <value>Z軸正限位</value>
+  </data>
+  <data name="PLC1I0_6" xml:space="preserve">
+    <value>Z軸負限位</value>
+  </data>
+  <data name="PLC1I0_7" xml:space="preserve">
+    <value>Z軸原點</value>
+  </data>
+  <data name="PLC1I1_0" xml:space="preserve">
+    <value>A軸正限位</value>
+  </data>
+  <data name="PLC1I1_1" xml:space="preserve">
+    <value>A軸負限位</value>
+  </data>
+  <data name="PLC1I1_2" xml:space="preserve">
+    <value>A軸原點</value>
+  </data>
+  <data name="PLC1I1_3" xml:space="preserve">
+    <value>緊急停止</value>
+  </data>
+  <data name="PLC1I1_4" xml:space="preserve">
+    <value>啟動</value>
+  </data>
+  <data name="PLC1I1_5" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="PLC1I1_6" xml:space="preserve">
+    <value>歸零</value>
+  </data>
+  <data name="PLC1I1_7" xml:space="preserve">
+    <value>放卷處無布檢測</value>
+  </data>
+  <data name="PLC1I2_0" xml:space="preserve">
+    <value>放卷處下限檢測</value>
+  </data>
+  <data name="PLC1I2_1" xml:space="preserve">
+    <value>進布上料無布檢測</value>
+  </data>
+  <data name="PLC1I2_2" xml:space="preserve">
+    <value>進布下限檢測</value>
+  </data>
+  <data name="PLC1I2_3" xml:space="preserve">
+    <value>伸出氣缸前限位</value>
+  </data>
+  <data name="PLC1I2_4" xml:space="preserve">
+    <value>伸出氣缸後限位</value>
+  </data>
+  <data name="PLC1I2_5" xml:space="preserve">
+    <value>卷標到位檢測</value>
+  </data>
+  <data name="PLC1I2_6" xml:space="preserve">
+    <value>復位</value>
+  </data>
+  <data name="PLC1I2_7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1I3_0" xml:space="preserve">
+    <value>主動輥伺服報警</value>
+  </data>
+  <data name="PLC1I3_1" xml:space="preserve">
+    <value>驗布站伺服報警</value>
+  </data>
+  <data name="PLC1I3_2" xml:space="preserve">
+    <value>進布站進布輥變頻器報警</value>
+  </data>
+  <data name="PLC1I3_3" xml:space="preserve">
+    <value>進布站分絲輥變頻器報警</value>
+  </data>
+  <data name="PLC1I3_4" xml:space="preserve">
+    <value>收卷站收卷輥變頻器報警</value>
+  </data>
+  <data name="PLC1I3_5" xml:space="preserve">
+    <value>收卷站分絲輥變頻器報警</value>
+  </data>
+  <data name="PLC1I3_6" xml:space="preserve">
+    <value>開卷站主動輥變頻器報警</value>
+  </data>
+  <data name="PLC1I3_7" xml:space="preserve">
+    <value>擺佈變頻器報警</value>
+  </data>
+  <data name="PLC1I4_0" xml:space="preserve">
+    <value>收卷糾偏報警</value>
+  </data>
+  <data name="PLC1I4_1" xml:space="preserve">
+    <value>收卷糾偏報警</value>
+  </data>
+  <data name="PLC1I4_2" xml:space="preserve">
+    <value>主軸伺服報警</value>
+  </data>
+  <data name="PLC1I4_3" xml:space="preserve">
+    <value>張力伺服報警</value>
+  </data>
+  <data name="PLC1I4_4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1I4_5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1I4_6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1I4_7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1I5_0" xml:space="preserve">
+    <value>收卷糾偏報警</value>
+  </data>
+  <data name="PLC1I5_1" xml:space="preserve">
+    <value>收卷糾偏報警</value>
+  </data>
+  <data name="PLC1I5_2" xml:space="preserve">
+    <value>主軸伺服報警</value>
+  </data>
+  <data name="PLC1I5_3" xml:space="preserve">
+    <value>張力伺服報警</value>
+  </data>
+  <data name="PLC1I5_4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1I5_5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1I5_6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1I5_7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q0_0" xml:space="preserve">
+    <value>X軸脈衝</value>
+  </data>
+  <data name="PLC1Q0_1" xml:space="preserve">
+    <value>Z軸脈衝</value>
+  </data>
+  <data name="PLC1Q0_2" xml:space="preserve">
+    <value>X軸方向</value>
+  </data>
+  <data name="PLC1Q0_3" xml:space="preserve">
+    <value>A軸脈衝</value>
+  </data>
+  <data name="PLC1Q0_4" xml:space="preserve">
+    <value>X軸使能</value>
+  </data>
+  <data name="PLC1Q0_5" xml:space="preserve">
+    <value>Z軸使能</value>
+  </data>
+  <data name="PLC1Q0_6" xml:space="preserve">
+    <value>A軸使能</value>
+  </data>
+  <data name="PLC1Q0_7" xml:space="preserve">
+    <value>Z軸方向</value>
+  </data>
+  <data name="PLC1Q1_0" xml:space="preserve">
+    <value>A軸方向</value>
+  </data>
+  <data name="PLC1Q1_1" xml:space="preserve">
+    <value>三色燈-綠</value>
+  </data>
+  <data name="PLC1Q1_2" xml:space="preserve">
+    <value>三色燈-黃</value>
+  </data>
+  <data name="PLC1Q1_3" xml:space="preserve">
+    <value>三色燈-紅</value>
+  </data>
+  <data name="PLC1Q1_4" xml:space="preserve">
+    <value>三色燈-蜂鳴器</value>
+  </data>
+  <data name="PLC1Q1_5" xml:space="preserve">
+    <value>分邊直流電機1</value>
+  </data>
+  <data name="PLC1Q1_6" xml:space="preserve">
+    <value>分邊直流電機2</value>
+  </data>
+  <data name="PLC1Q1_7" xml:space="preserve">
+    <value>擺佈對中啟停</value>
+  </data>
+  <data name="PLC1Q2_0" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q2_1" xml:space="preserve">
+    <value>真空電磁閥</value>
+  </data>
+  <data name="PLC1Q2_2" xml:space="preserve">
+    <value>氣缸電磁閥</value>
+  </data>
+  <data name="PLC1Q2_3" xml:space="preserve">
+    <value>復位輸出</value>
+  </data>
+  <data name="PLC1Q2_4" xml:space="preserve">
+    <value>糾偏器自動</value>
+  </data>
+  <data name="PLC1Q2_5" xml:space="preserve">
+    <value>糾偏器回中</value>
+  </data>
+  <data name="PLC1Q2_6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q2_7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q3_0" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q3_1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q3_2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q3_3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q3_4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q3_5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q3_6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q3_7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I0_0" xml:space="preserve">
+    <value>放卷伺服正極限</value>
+  </data>
+  <data name="PLC2I0_1" xml:space="preserve">
+    <value>放卷伺服負極限</value>
+  </data>
+  <data name="PLC2I0_2" xml:space="preserve">
+    <value>放卷伺服原點</value>
+  </data>
+  <data name="PLC2I0_3" xml:space="preserve">
+    <value>收卷伺服正極限</value>
+  </data>
+  <data name="PLC2I0_4" xml:space="preserve">
+    <value>收卷伺服負極限</value>
+  </data>
+  <data name="PLC2I0_5" xml:space="preserve">
+    <value>收卷伺服原點</value>
+  </data>
+  <data name="PLC2I0_6" xml:space="preserve">
+    <value>啟動</value>
+  </data>
+  <data name="PLC2I0_7" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="PLC2I1_0" xml:space="preserve">
+    <value>收卷傳感器1-1</value>
+  </data>
+  <data name="PLC2I1_1" xml:space="preserve">
+    <value>收卷傳感器1-2</value>
+  </data>
+  <data name="PLC2I1_2" xml:space="preserve">
+    <value>放卷傳感器1-1</value>
+  </data>
+  <data name="PLC2I1_3" xml:space="preserve">
+    <value>放卷傳感器1-2</value>
+  </data>
+  <data name="PLC2I1_4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I1_5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I1_6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I1_7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I2_0" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I2_1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I2_2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I2_3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I2_4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I2_5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I2_6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I2_7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q0_0" xml:space="preserve">
+    <value>放卷脈衝</value>
+  </data>
+  <data name="PLC2Q0_1" xml:space="preserve">
+    <value>收卷脈衝</value>
+  </data>
+  <data name="PLC2Q0_2" xml:space="preserve">
+    <value>放卷方向</value>
+  </data>
+  <data name="PLC2Q0_3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q0_4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q0_5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q0_6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q0_7" xml:space="preserve">
+    <value>收卷方向</value>
+  </data>
+  <data name="PLC2Q1_0" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q1_1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q1_2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q1_3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q1_4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q1_5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q1_6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q1_7" xml:space="preserve">
+    <value />
+  </data>
+</root>

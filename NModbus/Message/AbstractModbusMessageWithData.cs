@@ -19,5 +19,9 @@ namespace NModbus.Message
             get => (TData)MessageImpl.Data;
             set => MessageImpl.Data = value;
         }
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }

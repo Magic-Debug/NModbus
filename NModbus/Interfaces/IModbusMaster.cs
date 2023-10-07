@@ -32,7 +32,7 @@ namespace NModbus
 		Task<bool[]> ReadCoilsAsync(byte slaveAddress, ushort startAddress, ushort numberOfPoints);
 
 		/// <summary>
-		///    Reads from 1 to 2000 contiguous discrete input status.
+		///  读取离散线圈数据  Reads from 1 to 2000 contiguous discrete input status.
 		/// </summary>
 		/// <param name="slaveAddress">Address of device to read values from.</param>
 		/// <param name="startAddress">Address to begin reading.</param>

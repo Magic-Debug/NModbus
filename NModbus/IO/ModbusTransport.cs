@@ -144,7 +144,7 @@ namespace NModbus.IO
 
                                 if (readAgain)
                                 {
-                                    Logger.Debug($"Received ACKNOWLEDGE slave exception response, waiting {_waitToRetryMilliseconds} milliseconds and retrying to read response.");
+                                    Logger.Debug($"收到 ACKNOWLEDGE 异常响应, waiting {_waitToRetryMilliseconds} milliseconds and retrying to read response.");
                                     Sleep(WaitToRetryMilliseconds);
                                 }
                                 else
@@ -175,8 +175,7 @@ namespace NModbus.IO
                         throw;
                     }
 
-                    Logger.Warning($"Received SLAVE_DEVICE_BUSY exception response, waiting {_waitToRetryMilliseconds} milliseconds and resubmitting request.");
-
+                    Logger.Warning($"收到 SLAVE_DEVICE_BUSY 异常响应, 等待 {_waitToRetryMilliseconds} 毫秒 然后再提交请求.");
                     Sleep(WaitToRetryMilliseconds);
                 }
                 catch (Exception e)

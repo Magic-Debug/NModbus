@@ -111,7 +111,7 @@ namespace NModbus.Device
         /// </summary>
         public override async Task ListenAsync(CancellationToken cancellationToken = new CancellationToken())
         {
-            Logger.Information("Start Modbus Tcp Server.");
+            Logger.Information("启动Modbus Tcp Server.");
             // TODO: add state {stopped, listening} and check it before starting
             Server.Start();
             // Cancellation code based on https://stackoverflow.com/a/47049129/11066760
@@ -122,7 +122,7 @@ namespace NModbus.Device
                     while (!cancellationToken.IsCancellationRequested)
                     {
                         TcpClient client = await Server.AcceptTcpClientAsync().ConfigureAwait(false);
-                        var masterConnection = new ModbusMasterTcpConnection(client, this, ModbusFactory, Logger);
+                        ModbusMasterTcpConnection masterConnection = new ModbusMasterTcpConnection(client, this, ModbusFactory, Logger);
                         masterConnection.ModbusMasterTcpConnectionClosed += OnMasterConnectionClosedHandler;
                         _masters.TryAdd(client.Client.RemoteEndPoint.ToString(), masterConnection);
                     }

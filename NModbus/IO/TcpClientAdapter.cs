@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
+using System.Linq;
 using System.Net.Sockets;
 using System.Threading;
 using NModbus.Unme.Common;
@@ -36,12 +39,18 @@ namespace NModbus.IO
 
         public void Write(byte[] buffer, int offset, int size)
         {
+            string data = string.Join(" ", buffer.Select(b => b.ToString()));
+            File.AppendAllText("modbus.txt", $"{data}[{buffer.Length}]W{Environment.NewLine}");
             _tcpClient.GetStream().Write(buffer, offset, size);
         }
 
         public int Read(byte[] buffer, int offset, int size)
         {
-            return _tcpClient.GetStream().Read(buffer, offset, size);
+            NetworkStream stream = _tcpClient.GetStream();
+            int len = stream.Read(buffer, offset, size);
+            string data = string.Join(" ", buffer.Select(b => b.ToString()));
+            File.AppendAllText("modbus.txt", $"{buffer.Length}{data}[{buffer.Length}]R{Environment.NewLine}");
+            return len;
         }
 
         public void DiscardInBuffer()

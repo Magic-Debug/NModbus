@@ -54,7 +54,7 @@ namespace NModbus.Message
 
         public override string ToString()
         {
-            string msg = $"Write {NumberOfPoints} holding registers starting at address {StartAddress}.";
+            string msg = $"写入 {NumberOfPoints} 保持寄存器，起始地址：{StartAddress}";
             return msg;
         }
 

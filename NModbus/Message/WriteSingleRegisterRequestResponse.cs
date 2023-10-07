@@ -30,6 +30,7 @@ namespace NModbus.Message
 
         public override string ToString()
         {
+          string txt=  base.ToString();
             Debug.Assert(Data != null, "Argument Data cannot be null.");
             Debug.Assert(Data.Count() == 1, "Data should have a count of 1.");
 
@@ -59,5 +60,7 @@ namespace NModbus.Message
             StartAddress = (ushort)IPAddress.NetworkToHostOrder(BitConverter.ToInt16(frame, 2));
             Data = new RegisterCollection((ushort)IPAddress.NetworkToHostOrder(BitConverter.ToInt16(frame, 4)));
         }
+
+        
     }
 }

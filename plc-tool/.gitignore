@@ -1,0 +1,18 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/src/.vs/PLCTool/FileContentIndex
+/src/DapperHelper/bin/Debug
+/src/DapperHelper/en
+/src/DapperHelper/obj/Debug
+/src/DapperHelper/zh-CN
+/src/DapperHelper/zh-TW
+/src/FrameworkCommon/bin/Debug
+/src/FrameworkCommon/obj/Debug
+/src/PLCTool/bin
+/src/PLCTool/obj/Debug
+/src/.vs/PLCTool/v17
+/src/.vs
+/src/PLC-Tool/bin/Debug
+/src/PLCTool/obj

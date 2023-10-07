@@ -6,6 +6,9 @@
     /// <typeparam name="TPoint"></typeparam>
     public interface IPointSource<TPoint>
     {
+
+        TPoint[] Points { get; }
+
         /// <summary>
         /// Read a series of points.
         /// </summary>

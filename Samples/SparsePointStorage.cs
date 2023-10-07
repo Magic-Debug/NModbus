@@ -68,6 +68,8 @@ namespace Samples
     {
         private readonly Dictionary<ushort, TPoint> _values = new Dictionary<ushort, TPoint>();
 
+        public TPoint[] Points { get; }
+
         public event EventHandler<StorageEventArgs<TPoint>> StorageOperationOccurred;
 
         /// <summary>

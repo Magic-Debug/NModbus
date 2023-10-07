@@ -11,20 +11,25 @@ namespace NModbus.Data
     internal class DefaultPointSource<TPoint> : IPointSource<TPoint>
     {
         //Only create this if referenced.
-        private readonly Lazy<TPoint[]> _points;
+        public TPoint[] Points { get; }
 
         private readonly object _syncRoot = new object();
 
         public DefaultPointSource()
         {
-            _points = new Lazy<TPoint[]>(() => new TPoint[ushort.MaxValue+1]);
+            Points = new TPoint[120];
+        }
+
+        public void Init()
+        {
+
         }
 
         public TPoint[] ReadPoints(ushort startAddress, ushort numberOfPoints)
         {
             lock (_syncRoot)
             {
-                return _points.Value
+                return Points
                     .Slice(startAddress, numberOfPoints)
                     .ToArray();
             }
@@ -36,7 +41,7 @@ namespace NModbus.Data
             {
                 for (ushort index = 0; index < points.Length; index++)
                 {
-                    _points.Value[startAddress + index] = points[index];
+                    Points[startAddress + index] = points[index];
                 }
             }
         }

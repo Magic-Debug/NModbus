@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Alarm0" xml:space="preserve">
+    <value>急停輸入</value>
+  </data>
+  <data name="Alarm1" xml:space="preserve">
+    <value>放卷檢測到無布</value>
+  </data>
+  <data name="Alarm10" xml:space="preserve">
+    <value>進布站進布軸故障</value>
+  </data>
+  <data name="Alarm11" xml:space="preserve">
+    <value>進布站分絲軸故障</value>
+  </data>
+  <data name="Alarm12" xml:space="preserve">
+    <value>收卷站收卷軸故障</value>
+  </data>
+  <data name="Alarm13" xml:space="preserve">
+    <value>收卷站分絲軸故障</value>
+  </data>
+  <data name="Alarm14" xml:space="preserve">
+    <value>放卷站放卷軸故障</value>
+  </data>
+  <data name="Alarm15" xml:space="preserve">
+    <value>疊布站疊布軸故障</value>
+  </data>
+  <data name="Alarm16" xml:space="preserve">
+    <value>空跑測試</value>
+  </data>
+  <data name="Alarm2" xml:space="preserve">
+    <value>上位機急停輸入</value>
+  </data>
+  <data name="Alarm3" xml:space="preserve">
+    <value>標籤失敗</value>
+  </data>
+  <data name="Alarm4" xml:space="preserve">
+    <value>變頻器故障</value>
+  </data>
+  <data name="Alarm5" xml:space="preserve">
+    <value>放卷糾偏伺服故障</value>
+  </data>
+  <data name="Alarm6" xml:space="preserve">
+    <value>收卷糾偏伺服故障</value>
+  </data>
+  <data name="Alarm7" xml:space="preserve">
+    <value>稱重位置物料沒有清空</value>
+  </data>
+  <data name="Alarm8" xml:space="preserve">
+    <value>驗布站主動軸故障</value>
+  </data>
+  <data name="Alarm9" xml:space="preserve">
+    <value>驗布站張力軸故障</value>
+  </data>
+  <data name="AxlesAlarm0" xml:space="preserve">
+    <value>逆變單元U相保護（OUt1）</value>
+  </data>
+  <data name="AxlesAlarm1" xml:space="preserve">
+    <value>逆變單元V相保護（OUt2）</value>
+  </data>
+  <data name="AxlesAlarm10" xml:space="preserve">
+    <value>電機過載（OL1）</value>
+  </data>
+  <data name="AxlesAlarm11" xml:space="preserve">
+    <value>變頻器過載（OL2）</value>
+  </data>
+  <data name="AxlesAlarm12" xml:space="preserve">
+    <value>輸入側缺相（SPI）</value>
+  </data>
+  <data name="AxlesAlarm13" xml:space="preserve">
+    <value>輸出側缺相（SPO）</value>
+  </data>
+  <data name="AxlesAlarm14" xml:space="preserve">
+    <value>整流模塊過熱（OH1）</value>
+  </data>
+  <data name="AxlesAlarm15" xml:space="preserve">
+    <value>逆變模塊過熱故障（OH2）</value>
+  </data>
+  <data name="AxlesAlarm16" xml:space="preserve">
+    <value>外部故障（EF）</value>
+  </data>
+  <data name="AxlesAlarm17" xml:space="preserve">
+    <value>485通訊故障（CE）</value>
+  </data>
+  <data name="AxlesAlarm18" xml:space="preserve">
+    <value>電流檢測故障（ItE）</value>
+  </data>
+  <data name="AxlesAlarm19" xml:space="preserve">
+    <value>電機自學習故障（tE）</value>
+  </data>
+  <data name="AxlesAlarm2" xml:space="preserve">
+    <value>逆變單元W相保護（OUt3）</value>
+  </data>
+  <data name="AxlesAlarm20" xml:space="preserve">
+    <value>EEPROM操作故障（EEP）</value>
+  </data>
+  <data name="AxlesAlarm21" xml:space="preserve">
+    <value>PID反饋斷線故障（PIDE）</value>
+  </data>
+  <data name="AxlesAlarm22" xml:space="preserve">
+    <value>制動單元故障（bCE）</value>
+  </data>
+  <data name="AxlesAlarm23" xml:space="preserve">
+    <value>運行時間達到（END）</value>
+  </data>
+  <data name="AxlesAlarm24" xml:space="preserve">
+    <value>電子過載（OL3）</value>
+  </data>
+  <data name="AxlesAlarm25" xml:space="preserve">
+    <value>面板通訊錯誤（PCE）</value>
+  </data>
+  <data name="AxlesAlarm26" xml:space="preserve">
+    <value>參數上傳錯誤（UPE）</value>
+  </data>
+  <data name="AxlesAlarm27" xml:space="preserve">
+    <value>參數下載錯誤（DNE）</value>
+  </data>
+  <data name="AxlesAlarm28" xml:space="preserve">
+    <value>Profibus通訊故障（E-DP）</value>
+  </data>
+  <data name="AxlesAlarm29" xml:space="preserve">
+    <value>以太網通訊故障（E-NET）</value>
+  </data>
+  <data name="AxlesAlarm3" xml:space="preserve">
+    <value>加速過電流（OC1）</value>
+  </data>
+  <data name="AxlesAlarm30" xml:space="preserve">
+    <value>CAN通訊故障（E-CAN）</value>
+  </data>
+  <data name="AxlesAlarm31" xml:space="preserve">
+    <value>對地短路故障1（ETH1）</value>
+  </data>
+  <data name="AxlesAlarm32" xml:space="preserve">
+    <value>對地短路故障2（ETH2）</value>
+  </data>
+  <data name="AxlesAlarm33" xml:space="preserve">
+    <value>速度偏差故障（dEu）</value>
+  </data>
+  <data name="AxlesAlarm34" xml:space="preserve">
+    <value>失調故障（STo）</value>
+  </data>
+  <data name="AxlesAlarm35" xml:space="preserve">
+    <value>欠載故障（LL）</value>
+  </data>
+  <data name="AxlesAlarm4" xml:space="preserve">
+    <value>減速過電流（OC2）</value>
+  </data>
+  <data name="AxlesAlarm5" xml:space="preserve">
+    <value>恒速過電流（OC3）</value>
+  </data>
+  <data name="AxlesAlarm6" xml:space="preserve">
+    <value>加速過電壓（OV1）</value>
+  </data>
+  <data name="AxlesAlarm7" xml:space="preserve">
+    <value>減速過電壓（OV2）</value>
+  </data>
+  <data name="AxlesAlarm8" xml:space="preserve">
+    <value>恒速過電壓（OV3）</value>
+  </data>
+  <data name="AxlesAlarm9" xml:space="preserve">
+    <value>母線欠壓故障（UV）</value>
+  </data>
+  <data name="MotorState_bb_err" xml:space="preserve">
+    <value>擺佈電機故障</value>
+  </data>
+  <data name="MotorState_fj_err" xml:space="preserve">
+    <value>放卷電機故障</value>
+  </data>
+  <data name="MotorState_qy_err" xml:space="preserve">
+    <value>牽引電機故障</value>
+  </data>
+  <data name="MotorState_zl_err" xml:space="preserve">
+    <value>張力電機故障</value>
+  </data>
+  <data name="TicketAlarm0" xml:space="preserve">
+    <value>PLC開機未歸零或貼標超時</value>
+  </data>
+  <data name="TicketAlarm1" xml:space="preserve">
+    <value>標籤失敗</value>
+  </data>
+  <data name="TicketAlarm2" xml:space="preserve">
+    <value>氣缸回縮超時</value>
+  </data>
+  <data name="TicketAlarm3" xml:space="preserve">
+    <value>氣缸推出超時</value>
+  </data>
+  <data name="TicketAlarm4" xml:space="preserve">
+    <value>開啟手動禁止貼標</value>
+  </data>
+  <data name="TicketAlarm5" xml:space="preserve">
+    <value>吸標失敗</value>
+  </data>
+</root>

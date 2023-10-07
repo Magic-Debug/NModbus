@@ -64,5 +64,10 @@ namespace NModbus.Message
         }
 
         protected abstract void InitializeUnique(byte[] frame);
+
+        public override string ToString()
+        {
+            return MessageImpl.ToString();
+        }
     }
 }

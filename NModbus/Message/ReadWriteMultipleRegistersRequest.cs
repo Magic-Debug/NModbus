@@ -75,7 +75,7 @@ namespace NModbus.Message
 
         public override string ToString()
         {
-            string msg = $"Write {_writeRequest.NumberOfPoints} holding registers starting at address {_writeRequest.StartAddress}, and read {_readRequest.NumberOfPoints} registers starting at address {_readRequest.StartAddress}.";
+            string msg = $"写入{_writeRequest.NumberOfPoints} 保持寄存器，起始地址：{_writeRequest.StartAddress},  读取 {_readRequest.NumberOfPoints} 寄存器，起始地址：{_readRequest.StartAddress}.";
             return msg;
         }
 

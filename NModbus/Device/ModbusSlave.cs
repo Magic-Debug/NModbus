@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using NModbus.Extensions;
 using NModbus.Message;
 
-namespace NModbus.Device 
+namespace NModbus.Device
 {
     public class ModbusSlave : IModbusSlave
     {
         private readonly byte _unitId;
-        private readonly ISlaveDataStore _dataStore;
+        public ISlaveDataStore _dataStore { get; }
 
         private readonly IDictionary<byte, IModbusFunctionService> _handlers;
 
@@ -51,7 +50,7 @@ namespace NModbus.Device
                 // Catches the exception for an illegal function or a custom exception from the ModbusSlaveRequestReceived event.
                 response = new SlaveExceptionResponse(
                     request.SlaveAddress,
-                    (byte) (Modbus.ExceptionOffset + request.FunctionCode),
+                    (byte)(Modbus.ExceptionOffset + request.FunctionCode),
                     ex.ExceptionCode);
             }
 #if NET45 || NET46

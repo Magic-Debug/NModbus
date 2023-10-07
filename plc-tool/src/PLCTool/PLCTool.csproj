@@ -1,0 +1,104 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>True</UseWPF>
+		<PackageIcon>favicon.ico</PackageIcon>
+		<Platforms>AnyCPU;x64</Platforms>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<ApplicationIcon>favicon.ico</ApplicationIcon>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<Optimize>False</Optimize>
+		<CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<Optimize>False</Optimize>
+		<CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+	  <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Remove="Forms\FormStatus.cs" />
+		<Compile Remove="Forms\FormStatus.Designer.cs" />
+		<Compile Remove="UC\UC_ForwardBackControl.cs" />
+		<Compile Remove="UC\UC_ForwardBackControl.Designer.cs" />
+		<Compile Remove="UC\UC_OnOffButton.cs" />
+		<Compile Remove="UC\UC_OnOffButton.Designer.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Remove="Forms\FormStatus.en.resx" />
+		<EmbeddedResource Remove="Forms\FormStatus.resx" />
+		<EmbeddedResource Remove="Forms\FormStatus.zh-CN.resx" />
+		<EmbeddedResource Remove="Forms\FormStatus.zh-TW.resx" />
+		<EmbeddedResource Remove="UC\UC_ForwardBackControl.resx" />
+		<EmbeddedResource Remove="UC\UC_OnOffButton.resx" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Content Include="favicon.ico" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="HIC.System.Windows.Forms.DataVisualization" Version="1.0.1" />
+		<PackageReference Include="NLog" Version="5.1.0" />
+		<PackageReference Include="SunnyUI" Version="3.5.0" />
+		<PackageReference Include="MiniExcel" Version="1.31.2" />
+		<PackageReference Include="System.IO.Ports" Version="7.0.0" />
+		<PackageReference Include="ThoughtWorks.QRCode" Version="1.1.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
+
+		<PackageReference Include="Serilog" Version="2.12.0" />
+		<PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+		<PackageReference Include="Serilog.Sinks.Console" Version="4.0.1" />
+		<PackageReference Include="Serilog.Sinks.Elasticsearch" Version="8.4.1" />
+		<PackageReference Include="Serilog.Sinks.Seq" Version="5.2.2" />
+		<PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+		<PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
+		<PackageReference Include="Serilog.Sinks.Async" Version="1.5.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\..\NModbus.UnitTests\NModbus.UnitTests.csproj" />
+	  <ProjectReference Include="..\..\..\NModbus\NModbus.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="System.Management">
+			<HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Management.dll</HintPath>
+		</Reference>
+		<Reference Include="TSCommClr">
+			<HintPath>..\PLCTool\Dll\TSCommClr.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Update="Forms\FrmDashboard.cs" />
+		<Compile Update="Properties\Resources.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Update="Properties\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+	<ItemGroup>
+		<None Update="appsettings.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="plc-settings.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,936 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        "TSCommClr"
+    </assembly>
+    <members>
+        <member name="M:tnh.mstr_to_wstr(std.basic_string&lt;System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte,std.char_traits{System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte},std.allocator&lt;System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+多字符转化为unicode字符
+</summary>
+            <param name="str">要转化的字符</param>
+            <returns>相应的unicode字符</returns>
+        </member>
+        <member name="M:tnh.wstr_to_mstr(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+宽字符转化为多字符
+</summary>
+            <param name="wstr">要转化的字符</param>
+            <returns>相应的多字符</returns>
+        </member>
+        <member name="M:tnh.print_debug(System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte!System.Runtime.CompilerServices.IsConst*,BTEllipsis)">
+打印调试信息
+
+</member>
+        <member name="M:tnh.set_debug_log_file(System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte!System.Runtime.CompilerServices.IsConst*)">
+设置调试输出日志文件。
+
+</member>
+        <member name="M:tnh.calculate_crc(System.Byte!System.Runtime.CompilerServices.IsConst*,System.Int32,System.UInt16)">
+	* @brief 使用CCITT方式计算CRC校验
+
+	* @param data: 要计算其CRC校验值的数据
+	* @param count: 数据的长度
+	* @param initial_remainder 初始余数值
+	* @return CRC校验值
+	* @example data是完整的一组数据，initial_remainder填入默认的值CRC_INITIAL_REMAINDER
+	*		如果有一组数据，分多次计算CRC校验结果，则除第一次填入CRC_INITIAL_REMAINDER外，后面调用要将
+	*		initial_remainder设为前一次的返回值，最后一次返回的值即最络的CRC校验值
+	*		假设要计算512个字字节的数据的CRC校验值，如果是一次计算，则
+	*			WORD remainder = algo_calculate_crc(data, 512, CRC_INITIAL_REMAINDER);
+	*		如果分为两次，则：
+	*			WORD remainder = algo_calculate_crc(data, 256, CRC_INITIAL_REMAINDER);
+	*			remainder = algo_calculate_crc(data+256, 256, remainder);
+
+</member>
+        <member name="M:clralgo_8_gloss_data(clralgo_Spectra*,clralgo_Spectra*,clralgo_Spectra*,clralgo_Spectra*)">
+            <summary>
+璁＄畻8搴﹀厜娉藉害
+</summary>
+            <param name="ssci">鏍峰搧鍙嶅皠鐜嘢CI</param>
+            <param name="ssce">鏍峰搧鍙嶅皠鐜嘢CE</param>
+            <param name="wsci">鐧芥澘鍙嶅皠鐜嘢CI</param>
+            <param name="wsce">鐧芥澘鍙嶅皠鐜嘢CE</param>
+            <returns />
+        </member>
+        <member name="M:clralgo_is_color_index_need_standard(_ColorIndex)">
+@brief 鍒ゆ柇缁欏畾鐨勯鑹茬储寮曟槸鍚﹂渶瑕佹爣鏍?
+
+</member>
+        <member name="M:clralgo_get_lab_from_color_values(_ColorSpace,clralgo_StandardIlluminant,clralgo_StandardObserver,System.Single!System.Runtime.CompilerServices.IsConst*,clralgo_CIELab*)">
+@brief 浠庢寚瀹氶鑹茬┖闂寸殑棰滆壊鍊艰幏鍙朙ab鍊?
+@param color_space: `values`鐨勯鑹茬┖闂?
+@param illuminant: 鎸囧畾鏍囧噯鍏夋簮
+@param observer: 鎸囧畾鏍囧噯瑙傚療鑰呰搴?
+@param values: 鎸囧畾棰滆壊绌洪棿鐨勯鑹插€硷紝鍏跺€间笌鐩稿簲缁撴瀯浣撶殑瀹氫箟瀵瑰簲
+@param lab: 缁撴灉Lab鍊?
+@return: 鎸囧畾棰滆壊绌洪棿鏈夋晥杩斿洖鐪燂紝鍚﹀垯杩斿洖鍋?
+
+</member>
+        <member name="M:clralgo_get_color_values_by_lab(clralgo_CIELab!System.Runtime.CompilerServices.IsConst*,_ColorSpace,clralgo_StandardIlluminant,clralgo_StandardObserver,System.Single*)">
+@brief 鐢盋olorData鑾峰彇鎸囧畾棰滆壊绌洪棿鐨勯鑹插€?
+@param lab: 棰滆壊鐨凩ab鍊硷紝蹇呴』鏄痐illuminant`鍜宍observer`鏉′欢涓嬬殑XYX鍊硷紝鍚﹀垯杞崲缁撴灉鏄敊璇濈殑
+@param color_space: 鎸囧畾棰滆壊绌洪棿
+@param illuminant: 鎸囧畾鏍囧噯鍏夋簮
+@param observer: 鎸囧畾鏍囧噯瑙傚療鑰呰搴?
+@param values: 杩斿洖鎸囧畾棰滆壊绌洪棿鐨勯鑹插€硷紝鍏跺€间笌鐩稿簲缁撴瀯浣撶殑瀹氫箟瀵瑰簲
+@return: 鎸囧畾棰滆壊绌洪棿鏈夋晥杩斿洖鐪燂紝鍚﹀垯杩斿洖鍋?
+
+</member>
+        <member name="M:clralgo_get_color_values_by_xyz(clralgo_CIEXYZ!System.Runtime.CompilerServices.IsConst*,_ColorSpace,clralgo_StandardIlluminant,clralgo_StandardObserver,System.Single*)">
+@brief 鐢盋olorData鑾峰彇鎸囧畾棰滆壊绌洪棿鐨勯鑹插€?
+@param xyz: 棰滆壊鐨刋YZ鍊硷紝蹇呴』鏄痐illuminant`鍜宍observer`鏉′欢涓嬬殑XYX鍊硷紝鍚﹀垯杞崲缁撴灉鏄敊璇濈殑
+@param color_space: 鎸囧畾棰滆壊绌洪棿
+@param illuminant: 鎸囧畾鏍囧噯鍏夋簮
+@param observer: 鎸囧畾鏍囧噯瑙傚療鑰呰搴?
+@param values: 杩斿洖鎸囧畾棰滆壊绌洪棿鐨勯鑹插€硷紝鍏跺€间笌鐩稿簲缁撴瀯浣撶殑瀹氫箟瀵瑰簲
+@return: 鎸囧畾棰滆壊绌洪棿鏈夋晥杩斿洖鐪燂紝鍚﹀垯杩斿洖鍋?
+
+</member>
+        <member name="M:clralgo_get_color_values_by_spectra(clralgo_Spectra!System.Runtime.CompilerServices.IsConst*,_ColorSpace,clralgo_StandardIlluminant,clralgo_StandardObserver,System.Single*)">
+@brief 鏍规嵁鍙嶅皠鐜囪绠楁寚瀹氶鑹茬┖闂寸殑棰滆壊鍊?
+@param spectra: 鍏夎氨鏁版嵁
+@param color_space: 鎸囧畾棰滆壊绌洪棿
+@param illuminant: 鎸囧畾鏍囧噯鍏夋簮
+@param observer: 鎸囧畾鏍囧噯瑙傚療鑰呰搴?
+@param values: 杩斿洖鎸囧畾棰滆壊绌洪棿鐨勯鑹插€硷紝鍏跺€间笌鐩稿簲缁撴瀯浣撶殑瀹氫箟瀵瑰簲
+@return: 鎸囧畾棰滆壊绌洪棿鏈夋晥杩斿洖鐪燂紝鍚﹀垯杩斿洖鍋?
+
+</member>
+        <member name="M:tnh.ts.Instrument.getMeasurementParameter(tnh.ts.MeasurementParameter,System.Byte*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+@brief 获取测量参数
+@param value 存储获取的仪器的相应参数的Buffer，根据参数不同可以为不同的类型
+@return 错误码
+
+</member>
+        <member name="M:tnh.ts.Instrument.setMeasurementParameter(tnh.ts.MeasurementParameter,System.Byte)">
+@brief 设置测量参数
+@param value 要设置的值，根据参数不同可以为不同的类型
+@return 错误码
+
+</member>
+        <member name="M:tnh.ts.Instrument.setWhiteBoardParameter(tnh.ts.WhiteBoardParameter!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+@brief 设置白板参数
+@param param 新的白板参数
+@return 错误码
+
+</member>
+        <member name="M:tnh.ts.Instrument.getWhiteBoardParameter(tnh.ts.WhiteBoardParameter*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+@brief 获取白板参数
+@param param 如果操作成功存储获取到的白板参数
+@return 错误码
+
+</member>
+        <member name="M:tnh.ts.Instrument.clearSamples">
+@brief 删除所有试样记录
+
+</member>
+        <member name="M:tnh.ts.Instrument.deleteSample(System.UInt32,System.UInt32)">
+@brief 删除试样记录
+@param standardId: 要删除的试样记录关联的标样；如果为-1则删除所有试样记录
+@param sampleId: 要删除的试样的ID，如果为-1则删除相关标样下的所有试样记录
+@return 错误码
+
+</member>
+        <member name="M:tnh.ts.Instrument.clearRecords">
+@brief 清空所有记录
+
+</member>
+        <member name="M:tnh.ts.Instrument.deleteStandard(System.UInt32)">
+@brief 删除标样（同时会删除与之关联的试样记录）
+@param standardId: 要删除的标样的ID；如果为-1则删除所有标样记录
+@return 错误码
+
+</member>
+        <member name="M:tnh.ts.Instrument.downloadStandards(tnh.ts.StandardRecord!System.Runtime.CompilerServices.IsConst*,System.UInt32)">
+@brief 向仪器中写入标样
+@param standards 要写入的标样
+@param count 写入的标样数
+@return 错误码
+
+</member>
+        <member name="M:tnh.ts.Instrument.uploadSamples(std.vector&lt;tnh.ts.TrialRecord,std.allocator&lt;tnh.ts.TrialRecord&gt;&gt;*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt32,System.UInt32,System.UInt32)">
+@brief 上传试样
+@param records 存储上传的试样
+@param stdId 要上传的试样关联的标样ID
+@param from 从标样的第几个试样开始上传（从零开始）
+@param count 上传的标样数量，如果为-1则上传从from开始的与指定标样ID关联的所有试样
+@return 错误码
+
+</member>
+        <member name="M:tnh.ts.Instrument.uploadStandards(std.vector&lt;tnh.ts.StandardRecord,std.allocator&lt;tnh.ts.StandardRecord&gt;&gt;*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.UInt32,System.UInt32)">
+@brief 上传标样
+@param records 存储上传的标样
+@param from 从第几个标样开始上传（从零开始）
+@param count 上传数量，如果为-1则上传从from起的所有标样
+@return 错误码
+
+</member>
+        <member name="M:tnh.ts.Instrument.getSampleCount(System.UInt32,System.UInt32*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+@brief getSampleCount 获取指定标样关联的试样个数
+@param stdId 指定标样的ID，如果为-1则返回试样总数
+@param count 存储与相应标样关联的试样个数
+@return 错误码
+
+</member>
+        <member name="M:tnh.ts.Instrument.getTotalSamples(System.UInt32*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+@brief 获取试样总数
+@param total 存储试样总数
+@return 错误码
+
+</member>
+        <member name="M:tnh.ts.Instrument.getTotalStandards(System.UInt32*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+@brief 获取标样总数
+@param total 存储标样总数
+@return 错误码
+
+</member>
+        <member name="M:tnh.ts.Instrument.calibrateBlack">
+@brief 黑校准
+@return 错误码
+
+</member>
+        <member name="M:tnh.ts.Instrument.calibrateWhite">
+@brief 白校准
+@return 错误码
+
+</member>
+        <member name="M:tnh.ts.Instrument.calibrate(System.Boolean)">
+@brief 校准仪器
+@param isWhiteCalibration 是否是白校准
+@return 校准成功返回CommunicationError::NoError，失败返回相应错误码
+
+</member>
+        <member name="M:tnh.ts.Instrument.measureTrial(tnh.ts.TrialRecord*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+@brief 测量试样
+@param record 如果操作成功返回测量结果
+@return 错误码
+
+</member>
+        <member name="M:tnh.ts.Instrument.measureStandard(tnh.ts.StandardRecord*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+@brief 测量标样
+@param record 如果操作成功返回测量结果
+@return 错误码
+
+</member>
+        <member name="M:tnh.ts.Instrument.getInstrumentStatus(tnh.ts.InstrumentStatus*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+@brief 获取仪器状态
+@param status 如果成功存储仪器状态
+@return 错误码
+
+</member>
+        <member name="M:tnh.ts.Instrument.getDeviceInfo(tnh.ts.DeviceInfo*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+@brief 获取设备信息
+@param info 如果操作成功，存储设备信息
+@return 错误码
+
+</member>
+        <member name="M:tnh.ts.Instrument.slaveAddress">
+@brief 返回从设备的MAC地址
+
+</member>
+        <member name="M:tnh.ts.Instrument.deviceName">
+@brief deviceName 连接的设备名
+
+</member>
+        <member name="M:tnh.ts.Instrument.isConnected">
+@brief 仪器是否连接
+
+</member>
+        <member name="M:tnh.ts.Instrument.disconnect">
+@brief 断开连接
+
+</member>
+        <member name="M:tnh.ts.Instrument.connect(std.basic_string&lt;System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte,std.char_traits{System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte},std.allocator&lt;System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.basic_string&lt;System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte,std.char_traits{System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte},std.allocator&lt;System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+@brief 连接仪器
+@param portName 指明要连接的串口名；如果为空自动查找相应设备
+@param mac 如果是通过蓝牙连接，传入从设备的MAC地址；如果通过USB连接，忽略
+@return 错误码
+
+</member>
+        <member name="M:tnh.ts.Instrument.scanBleSlaves(std.basic_string&lt;System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte,std.char_traits{System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte},std.allocator&lt;System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.vector&lt;tnh.ts.BleSlaveInfo,std.allocator&lt;tnh.ts.BleSlaveInfo&gt;&gt;*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+用蓝牙狗扫描蓝牙设备
+</summary>
+            <param name="donglePortName">蓝牙狗的串口名</param>
+            <param name="v">存储扫描到的蓝牙设备</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:tnh.CommunicationException.error_description">
+            <summary>
+获取错误描述
+</summary>
+        </member>
+        <member name="M:tnh.CommunicationException.error_code">
+            <summary>
+错误码
+</summary>
+        </member>
+        <member name="M:TsComm.Instrument.GetColorDataFromXyz(TsComm.ColorSpace,System.Double[],TsComm.StandardIlluminant,TsComm.StandardObserver)">
+            <summary>从CIEXYZ颜色空间转换为指定颜色空间的数据，注意不支持Munsell</summary>
+            <param name="colorSpace">要获取得的颜色空间</param>
+            <param name="xyz">CIE</param> XYZ，不能为空
+ <param name="illuminant">使用的标准光源</param><param name="observer">标准观察者</param><returns><para>如果colorSpace是 CIELAB反回L*、a*、b*</para><para>如果是CIEXYZ返回X、Y、Z</para><para>如果是CIEYxy返回Y、x、y</para><para>如果是CIELCH返回L*、C*、h°</para><para>如果是CIELUV返回L*、u*、v*</para><para>如果是HUNTERLAB返回L*、u*、v*</para><para>如果是SRGB返回R、G、B</para><para>如果是BETA_XY返回β、x、y</para><para>如果是DIN_LAB99返回L99、a99、b99</para></returns><exception cref="T:System.ArgumentException">参数无效时抛出该异常</exception><exception cref="T:System.NotSupportedException">如果指定了不支持的转换会抛出</exception></member>
+        <member name="M:TsComm.Instrument.GetColorDataFromSpectralData(TsComm.ColorSpace,System.Double[],TsComm.StandardIlluminant,TsComm.StandardObserver)">
+            <summary>用给定的光谱数据计算指定颜色空间颜色坐标</summary>
+            <param name="colorSpace">要获取得的颜色空间</param>
+            <param name="spectralData">光谱数据，不能为空，长度必须是SpectralDataCount，反射率为小数，如20%应该为0.20</param>
+            <param name="illuminant">使用的标准光源</param>
+            <param name="observer">标准观察者</param>
+            <returns>
+                <para>如果colorSpace是 CIELAB反回L*、a*、b*</para>
+                <para>如果是CIEXYZ返回X、Y、Z</para>
+                <para>如果是CIEYxy返回Y、x、y</para>
+                <para>如果是CIELCH返回L*、C*、h°</para>
+                <para>如果是CIELUV返回L*、u*、v*</para>
+                <para>如果是HUNTERLAB返回L*、u*、v*</para>
+                <para>如果是SRGB返回R、G、B</para>
+                <para>如果是BETA_XY返回β、x、y</para>
+                <para>如果是DIN_LAB99返回L99、a99、b99</para>
+            </returns>
+            <exception cref="T:System.ArgumentException">参数无效时抛出该异常</exception>
+            <exception cref="T:System.NotSupportedException">如果指定了不支持的转换会抛出</exception>
+        </member>
+        <member name="M:TsComm.Instrument.GetMeasurementParameter(TsComm.MeasurementParameter,System.Object@)">
+            <summary>获取测量参数</summary>
+            <param name="param">要获取的测量参数</param>
+            <param name="value">存储相应参数的值</param>
+            <remarks>
+                <para>测量参数对应的类型：</para>
+                <para>TransmissionFlag:		bool</para>
+                <para>ScMode:				ScMode</para>
+                <para>LensSwitchMode:		LensSwitchMode</para>
+                <para>LensPosition:			LensPos</para>
+                <para>MeasurementAperture:	Aperture</para>
+                <para>UvMode:				UvMode</para>
+                <para>StandardIlluminant:	StandardIlluminant</para>
+                <para>StandardObserver:		StandardObserver</para>
+                <para>ColorSpace:			ColorSpace</para>
+                <para>ColorDiffFormula:		ColorDiffFormula</para>
+                <para>ColorIndex:			ColorIndex</para>
+            </remarks>
+        </member>
+        <member name="M:TsComm.Instrument.SetMeasurementParameter(TsComm.MeasurementParameter,System.Object)">
+            <summary>设置测量参数</summary>
+            <remarks>
+                <para>测量参数对应的类型：</para>
+                <para>TransmissionFlag:		bool</para>
+                <para>ScMode:				ScMode</para>
+                <para>LensSwitchMode:		LensSwitchMode</para>
+                <para>LensPosition:			LensPos</para>
+                <para>MeasurementAperture:	Aperture</para>
+                <para>UvMode:				UvMode</para>
+                <para>StandardIlluminant:	StandardIlluminant</para>
+                <para>StandardObserver:		StandardObserver</para>
+                <para>ColorSpace:			ColorSpace</para>
+                <para>ColorDiffFormula:		ColorDiffFormula</para>
+                <para>ColorIndex:			ColorIndex</para>
+            </remarks>
+        </member>
+        <member name="M:TsComm.Instrument.SetWhiteBoardParameter(TsComm.WhiteBoardParameter)">
+            <summary>设置白板参数</summary>
+            <param name="param">新的白板参数</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:TsComm.Instrument.GetWhiteBoardParameter(TsComm.WhiteBoardParameter@)">
+            <summary>获取白板参数</summary>
+            <param name="param">如果操作成功存储获取到的白板参数</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:TsComm.Instrument.DeleteSample(System.UInt32,System.UInt32)">
+            <summary>删除指定试样</summary>
+            <param name="standardId">试样相关联的标样ID，如果为-1就删除所有试样记录</param>
+            <param name="sampleIndex">要删除的试样序号；如果-1就删除标样关联的所有试样</param>
+        </member>
+        <member name="M:TsComm.Instrument.DeleteAllSamples">
+            <summary>删除所有试样</summary>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:TsComm.Instrument.DeleteAllRecords">
+            <summary>删除所有记录</summary>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:TsComm.Instrument.DeleteStandard(System.UInt32)">
+            <summary>删除指定ID的标样</summary>
+            <param name="standardId">要删除的标样的ID；如果为-1则删除所有记录</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:TsComm.Instrument.DownloadStandards(TsComm.StandardRecord[])">
+            <summary>向仪器中写入标样</summary>
+            <param name="standards">要写入的标样</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:TsComm.Instrument.UploadSamples(TsComm.TrialRecord[]@,System.UInt32,System.UInt32,System.UInt32)">
+            <summary>上传试样</summary>
+            <param name="records">存储上传的试样</param>
+            <param name="stdId">要上传的试样关联的标样ID</param>
+            <param name="from">从标样的第几个试样开始上传（从零开始）</param>
+            <param name="count">上传的标样数量，如果为-1则上传从from开始的与指定标样ID关联的所有试样</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:TsComm.Instrument.UploadStandards(TsComm.StandardRecord[]@,System.UInt32,System.UInt32)">
+            <summary>上传标样</summary>
+            <param name="records">存储上传的标样</param>
+            <param name="from">从第几个标样开始上传（从零开始）</param>
+            <param name="count">上传数量，如果为-1则上传从from起的所有标样</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:TsComm.Instrument.GetSampleCount(System.UInt32,System.UInt32@)">
+            <summary>获取指定标样关联的试样个数</summary>
+            <param name="stdId">指定标样的ID，如果为-1则返回试样总数</param>
+            <param name="count">存储与相应标样关联的试样个数</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:TsComm.Instrument.GetTotalSamples(System.UInt32@)">
+            <summary>获取试样总数</summary>
+            <param name="total">存储试样总数</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:TsComm.Instrument.GetTotalStandards(System.UInt32@)">
+            <summary>获取标样总数</summary>
+            <param name="total">存储标样总数</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:TsComm.Instrument.CalibrateBlack">
+            <summary>黑校准</summary>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:TsComm.Instrument.CalibrateWhite">
+            <summary>白校准</summary>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:TsComm.Instrument.MeasureTrial(TsComm.TrialRecord@)">
+            <summary>测量试样</summary>
+            <param name="record">如果操作成功返回测量结果</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:TsComm.Instrument.MeasureStandard(TsComm.StandardRecord@)">
+            <summary>测量标样</summary>
+            <param name="record">如果操作成功返回测量结果</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:TsComm.Instrument.GetInstrumentStatus(TsComm.InstrumentStatus@)">
+            <summary>获取仪器状态</summary>
+            <param name="status">如果成功存储仪器状态</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:TsComm.Instrument.GetDeviceInfo(TsComm.DeviceInfo@)">
+            <summary>获取设备信息 </summary>
+            <param name="info">如果操作成功，存储设备信息</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="P:TsComm.Instrument.DeviceName">
+            <summary>获取连接的设备名</summary>
+        </member>
+        <member name="P:TsComm.Instrument.IsOpen">
+设备是否已打开
+
+</member>
+        <member name="M:TsComm.Instrument.Close">
+            <summary>关闭设备</summary>
+        </member>
+        <member name="M:TsComm.Instrument.ScanBleSlaves(System.String,TsComm.BleSlaveInfo[]@)">
+            <summary>
+通过蓝牙狗扫描蓝牙从设备
+</summary>
+            <param name="portName">蓝牙狗的串口名；注意：该串口必须是未被占用的</param>
+            <param name="slaves">返回扫描到的从设备</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:TsComm.Instrument.OpenByBleDongle(System.String,System.String)">
+            <summary>
+通过蓝牙狗连接仪器
+</summary>
+            <param name="portName">蓝牙狗的串口名；如果为空则自动查找</param>
+            <param name="mac">仪器的MAC地址，如果为空则自动查找，并连接信号最强的</param>
+            <returns />
+        </member>
+        <member name="M:TsComm.Instrument.Open(System.String)">
+            <summary>
+通过USB线连接设备
+</summary>
+            <param name="portName">USB虚拟串口名；如果为空则自动查找</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:TsComm.Instrument.DiableDebugLog">
+            <summary>
+关闭调试日志输出
+</summary>
+        </member>
+        <member name="M:TsComm.Instrument.EnableDebugLog">
+            <summary>
+开启调试日志输出
+</summary>
+        </member>
+        <member name="F:TsComm.Instrument.SpectralDataCount">
+            <summary>光谱个数</summary>
+        </member>
+        <member name="F:TsComm.Instrument.WaveLengthInterval">
+            <summary>光谱波长间隔</summary>
+        </member>
+        <member name="F:TsComm.Instrument.WaveLengthMax">
+            <summary>光谱终止波长</summary>
+        </member>
+        <member name="F:TsComm.Instrument.WaveLengthMin">
+            <summary>光谱起始波长</summary>
+        </member>
+        <member name="T:TsComm.Instrument">
+            <summary>TS仪器操作类</summary>
+        </member>
+        <member name="T:TsComm.MeasurementResultReceivedCallback">
+            <summary>接收到测量结果代理</summary>
+            <remarks>
+如果是测量标样，<c>record</c>是<c>StandardRecord</c>实例，如果是测量试样，则为<c>TrialRecord</c></remarks>
+        </member>
+        <member name="T:TsComm.BleSlaveInfo">
+            <summary>
+蓝牙从设备信息
+</summary>
+        </member>
+        <member name="T:TsComm.MeasurementParameter">
+            <summary>测量参数</summary>
+        </member>
+        <member name="F:TsComm.MeasurementParameter.ColorIndex">
+            <summary>使用的颜色指数</summary>
+        </member>
+        <member name="F:TsComm.MeasurementParameter.ColorDiffFormula">
+            <summary>色差公式</summary>
+        </member>
+        <member name="F:TsComm.MeasurementParameter.ColorSpace">
+            <summary>颜色空间</summary>
+        </member>
+        <member name="F:TsComm.MeasurementParameter.StandardObserver">
+            <summary>标准视场角</summary>
+        </member>
+        <member name="F:TsComm.MeasurementParameter.StandardIlluminant">
+            <summary>标准光源</summary>
+        </member>
+        <member name="F:TsComm.MeasurementParameter.UvMode">
+            <summary>UV模式</summary>
+        </member>
+        <member name="F:TsComm.MeasurementParameter.MeasurementAperture">
+            <summary>口径</summary>
+        </member>
+        <member name="F:TsComm.MeasurementParameter.LensPosition">
+            <summary>透镜位置</summary>
+        </member>
+        <member name="F:TsComm.MeasurementParameter.LensSwitchMode">
+            <summary>透镜切换方式</summary>
+        </member>
+        <member name="F:TsComm.MeasurementParameter.ScMode">
+            <summary>镜面光测量方式 SCI/SCE设置</summary>
+        </member>
+        <member name="F:TsComm.MeasurementParameter.TransmissionFlag">
+            <summary>透射标志</summary>
+        </member>
+        <member name="T:TsComm.ErrorCode">
+            <summary>错话码</summary>
+        </member>
+        <member name="F:TsComm.ErrorCode.InvalidArgument">
+            <summary>无效参数</summary>
+        </member>
+        <member name="F:TsComm.ErrorCode.NotEnoughStorage">
+            <summary>仪器存储空间不足</summary>
+        </member>
+        <member name="F:TsComm.ErrorCode.CalibrationFailed">
+            <summary>校准失败</summary>
+        </member>
+        <member name="F:TsComm.ErrorCode.StorageIsFull">
+            <summary>仪器存储空间已满</summary>
+        </member>
+        <member name="F:TsComm.ErrorCode.Uncalibrated">
+            <summary>仪器未校准</summary>
+        </member>
+        <member name="F:TsComm.ErrorCode.UnexpectCommand">
+            <summary>非预期的命令应答</summary>
+        </member>
+        <member name="F:TsComm.ErrorCode.InvalidPacket">
+            <summary>无效数据包</summary>
+        </member>
+        <member name="F:TsComm.ErrorCode.DeviceError">
+            <summary>串口收错误</summary>
+        </member>
+        <member name="F:TsComm.ErrorCode.RemoteError">
+            <summary>执行失败，仪器返回错误码</summary>
+        </member>
+        <member name="F:TsComm.ErrorCode.RecvTimeout">
+            <summary>接收超时</summary>
+        </member>
+        <member name="F:TsComm.ErrorCode.SendTimeout">
+            <summary>发送超时</summary>
+        </member>
+        <member name="F:TsComm.ErrorCode.DeviceBusy">
+            <summary>设备忙</summary>
+        </member>
+        <member name="F:TsComm.ErrorCode.NoSession">
+            <summary>没有建立连接</summary>
+        </member>
+        <member name="F:TsComm.ErrorCode.DeviceNotOpen">
+            <summary>没有打开串口</summary>
+        </member>
+        <member name="F:TsComm.ErrorCode.OpenDeviceFailed">
+            <summary>打开设备失败</summary>
+        </member>
+        <member name="F:TsComm.ErrorCode.DeviceNotFound">
+            <summary>找不到设备</summary>
+        </member>
+        <member name="F:TsComm.ErrorCode.NoError">
+            <summary>没有错误</summary>
+        </member>
+        <member name="P:TsComm.WhiteBoardParameter.Sce">
+            <summary>白板SCE的反射率数据</summary>
+        </member>
+        <member name="P:TsComm.WhiteBoardParameter.Sci">
+            <summary>白板SCI的反射率数据</summary>
+        </member>
+        <member name="P:TsComm.WhiteBoardParameter.InnerNumber">
+            <summary>内部编号</summary>
+        </member>
+        <member name="P:TsComm.WhiteBoardParameter.Sn">
+            <summary>白板编号</summary>
+        </member>
+        <member name="T:TsComm.WhiteBoardParameter">
+            <summary>白板参数</summary>
+        </member>
+        <member name="P:TsComm.TrialRecord.StandardId">
+            <summary>标样的ID</summary>
+        </member>
+        <member name="T:TsComm.TrialRecord">
+            <summary>试样记录</summary>
+        </member>
+        <member name="P:TsComm.StandardRecord.Tolerance">
+            <summary>标样的容差</summary>
+        </member>
+        <member name="T:TsComm.StandardRecord">
+            <summary>标样记录</summary>
+        </member>
+        <member name="P:TsComm.Record.Sce">
+            <summary>SCE数据</summary>
+        </member>
+        <member name="P:TsComm.Record.Sci">
+            <summary>SCI数据</summary>
+        </member>
+        <member name="P:TsComm.Record.DateTime">
+            <summary>测量日期时间</summary>
+        </member>
+        <member name="P:TsComm.Record.Name">
+            <summary>样品名</summary>
+        </member>
+        <member name="P:TsComm.Record.Id">
+            <summary>样品ID</summary>
+        </member>
+        <member name="P:TsComm.Record.Flags">
+            <summary>测量条件标志</summary>
+        </member>
+        <member name="T:TsComm.Record">
+            <summary>记录基类</summary>
+        </member>
+        <member name="P:TsComm.Tolerance.UpperDB">
+            <summary>Δb*上限</summary>
+        </member>
+        <member name="P:TsComm.Tolerance.LowerDB">
+            <summary>Δb*下限</summary>
+        </member>
+        <member name="P:TsComm.Tolerance.UpperDA">
+            <summary> Δa*上限</summary>
+        </member>
+        <member name="P:TsComm.Tolerance.LowerDA">
+            <summary>Δa*下限</summary>
+        </member>
+        <member name="P:TsComm.Tolerance.UpperDL">
+            <summary>ΔL*上限</summary>
+        </member>
+        <member name="P:TsComm.Tolerance.LowerDL">
+            <summary>ΔL*下限</summary>
+        </member>
+        <member name="P:TsComm.Tolerance.DE">
+            <summary>ΔE*</summary>
+        </member>
+        <member name="T:TsComm.Tolerance">
+            <summary>容差</summary>
+        </member>
+        <member name="F:TsComm.ColorData.SpectralData">
+            <value>光谱数据，光谱范围由<see cref="!:TsComm::Instrument::WaveLengthMin" />,
+ <see cref="!:TsComm::Instrument::WaveLengthMax" />, <see cref="!:TsComm::Instrument::WaveLengthInterval" />指明
+</value>
+        </member>
+        <member name="P:TsComm.ColorData.b">
+            <summary>CIE Lab颜色空间的b*值</summary>
+        </member>
+        <member name="P:TsComm.ColorData.a">
+            <summary>CIE Lab颜色空间的a*值</summary>
+        </member>
+        <member name="P:TsComm.ColorData.L">
+            <summary>CIE Lab颜色空间的L*值</summary>
+        </member>
+        <member name="P:TsComm.ColorData.Z">
+            <summary>CIE XYZ颜色空间的Z值</summary>
+        </member>
+        <member name="P:TsComm.ColorData.Y">
+            <summary>CIE XYZ颜色空间的Y值</summary>
+        </member>
+        <member name="P:TsComm.ColorData.X">
+            <summary>CIE XYZ颜色空间的X值</summary>
+        </member>
+        <member name="T:TsComm.ColorData">
+            <summary>颜色数据</summary>
+        </member>
+        <member name="P:TsComm.RecordFlags.Illuminant">
+            <summary>记录颜色的标准光源</summary>
+        </member>
+        <member name="P:TsComm.RecordFlags.Observer">
+            <summary>记录颜色的标准观察者角度</summary>
+        </member>
+        <member name="P:TsComm.RecordFlags.Aperture">
+            <summary>口径大小</summary>
+        </member>
+        <member name="P:TsComm.RecordFlags.UvMode">
+            <summary>UV模式</summary>
+        </member>
+        <member name="P:TsComm.RecordFlags.ScMode">
+            <summary>SC模式</summary>
+        </member>
+        <member name="P:TsComm.RecordFlags.IsTransitive">
+            <summary>是否是透射数据</summary>
+        </member>
+        <member name="P:TsComm.RecordFlags.Value">
+            <summary>标志的值</summary>
+        </member>
+        <member name="T:TsComm.RecordFlags">
+            <summary>记录标志</summary>
+        </member>
+        <member name="M:TsComm.BitSet.set_bits(System.UInt32,System.UInt32,System.UInt32,System.UInt32)">
+            <summary>获取<paramref name="value" />的指定bits，其中<paramref name="shift" />指明要获取的bit的起始位，<paramref name="width" />指明要获取的位的个数</summary>
+            <param name="value">要对其进行位操作的值</param>
+            <param name="shift">要设置的位的起始偏移</param>
+            <param name="width">要设置的位的个数</param>
+            <param name="bits">位的新值</param>
+        </member>
+        <member name="M:TsComm.BitSet.get_bits(System.UInt32,System.UInt32,System.UInt32)">
+            <summary>获取<paramref name="value" />的指定bits，其中<paramref name="shift" />指明要获取的bit的起始位，<paramref name="width" />指明要获取的位的个数</summary>
+            <param name="value">要对其进行位操作的值</param>
+            <param name="shift">要获取的位的起始偏移</param>
+            <param name="width">要获取的位的个数</param>
+            <returns>返回指定位偏移和宽度的位的值</returns>
+        </member>
+        <member name="T:TsComm.BitSet">
+            <summary>位操作类</summary>
+        </member>
+        <member name="P:TsComm.InstrumentStatus.IsCalibrated">
+            <summary>是否已校正</summary>
+        </member>
+        <member name="P:TsComm.InstrumentStatus.TrialCount">
+            <summary>已存试样数</summary>
+        </member>
+        <member name="P:TsComm.InstrumentStatus.StandardCount">
+            <summary>已存标样数</summary>
+        </member>
+        <member name="P:TsComm.InstrumentStatus.ColorIndex">
+            <summary>颜色指数</summary>
+        </member>
+        <member name="P:TsComm.InstrumentStatus.ColorDiffFormula">
+            <summary>色差公式</summary>
+        </member>
+        <member name="P:TsComm.InstrumentStatus.ColorSpace">
+            <summary>颜色空间</summary>
+        </member>
+        <member name="P:TsComm.InstrumentStatus.Illuminant">
+            <summary>当前光源设置</summary>
+        </member>
+        <member name="P:TsComm.InstrumentStatus.Observer">
+            <summary>观察者角度</summary>
+        </member>
+        <member name="P:TsComm.InstrumentStatus.UvMode">
+            <summary>UV模式</summary>
+        </member>
+        <member name="P:TsComm.InstrumentStatus.ScMode">
+            <summary>镜面反射光测量方式</summary>
+        </member>
+        <member name="P:TsComm.InstrumentStatus.IsTransitive">
+            <summary>是否是透射</summary>
+        </member>
+        <member name="P:TsComm.InstrumentStatus.Aperture">
+            <summary>口径</summary>
+        </member>
+        <member name="T:TsComm.InstrumentStatus">
+            <summary>仪器状态</summary>
+        </member>
+        <member name="P:TsComm.DeviceInfo.BlackBucketNumber">
+            <summary>黑桶编号</summary>
+        </member>
+        <member name="P:TsComm.DeviceInfo.WhiteBoardNumber">
+            <summary>白板编号</summary>
+        </member>
+        <member name="P:TsComm.DeviceInfo.HardwareVersion">
+            <summary>硬件版本号</summary>
+        </member>
+        <member name="P:TsComm.DeviceInfo.SoftwareVersion">
+            <summary>软件版本号</summary>
+        </member>
+        <member name="P:TsComm.DeviceInfo.Sn">
+            <summary>仪器序列号</summary>
+        </member>
+        <member name="P:TsComm.DeviceInfo.Optical">
+            <summary>光学结构</summary>
+        </member>
+        <member name="P:TsComm.DeviceInfo.Model">
+            <summary>仪器型号</summary>
+        </member>
+        <member name="T:TsComm.DeviceInfo">
+            <summary>设备信息</summary>
+        </member>
+        <member name="T:TsComm.ColorDataType">
+            <summary>记录中保存的数据类型</summary>
+        </member>
+        <member name="F:TsComm.ColorDataType.CieLab">
+            <summary>CIE LAB数据</summary>
+        </member>
+        <member name="F:TsComm.ColorDataType.SpectalData">
+            <summary>光谱数据</summary>
+        </member>
+        <member name="T:TsComm.ColorIndex">
+            <summary> 颜色指标</summary>
+        </member>
+        <member name="F:TsComm.ColorIndex.GLOSS_8">
+            <summary>8 度光泽度</summary>
+        </member>
+        <member name="F:TsComm.ColorIndex.PT_CO_INDEX">
+            <summary>pt co指数</summary>
+        </member>
+        <member name="F:TsComm.ColorIndex.COLOR_FASTNESS">
+            <summary>变色牢度</summary>
+        </member>
+        <member name="F:TsComm.ColorIndex.GARDNER_INDEX">
+            <summary>透射Garder指数</summary>
+        </member>
+        <member name="F:TsComm.ColorIndex.STAINING_FASTNESS">
+            <summary>沾色牢度</summary>
+        </member>
+        <member name="F:TsComm.ColorIndex.HUE_CLASSIFY_555">
+            <summary>555色调分类</summary>
+        </member>
+        <member name="F:TsComm.ColorIndex.OPACITY">
+            <summary>遮盖度</summary>
+        </member>
+        <member name="F:TsComm.ColorIndex.METAMERISM_INDIEX">
+            <summary>同色异谱指数</summary>
+        </member>
+        <member name="F:TsComm.ColorIndex.STRENGTH">
+            <summary>力份</summary>
+        </member>
+        <member name="F:TsComm.ColorIndex.WHITENESS">
+            <summary>白度指数</summary>
+        </member>
+        <member name="F:TsComm.ColorIndex.YELLOWNESS">
+            <summary>黄度指数</summary>
+        </member>
+        <member name="F:TsComm.ColorIndex.INVALID">
+            <summary>不选任何选项</summary>
+        </member>
+        <member name="T:TsComm.ColorDiffFormula">
+            <summary>色差公式</summary>
+        </member>
+        <member name="F:TsComm.ColorDiffFormula.DEHUNTER">
+            <summary>ΔE(Hunter)</summary>
+        </member>
+        <member name="F:TsComm.ColorDiffFormula.DIN_E99">
+            <summary>DIN ΔE99</summary>
+        </member>
+        <member name="F:TsComm.ColorDiffFormula.DECMC">
+            <summary>ΔE*cmc(l:c)</summary>
+        </member>
+        <member name="F:TsComm.ColorDiffFormula.DECMC21">
+            <summary>ΔE*cmc(2:1)</summary>
+        </member>
+        <member name="F:TsComm.ColorDiffFormula.DECMC11">
+            <summary>ΔE*cmc(1:1)</summary>
+        </member>
+        <member name="F:TsComm.ColorDiffFormula.CIEDE2000">
+            <summary>ΔE*00</summary>
+        </member>
+        <member name="F:TsComm.ColorDiffFormula.CIEDE94">
+            <summary>ΔE*94</summary>
+        </member>
+        <member name="F:TsComm.ColorDiffFormula.CIEDE">
+            <summary>ΔE*ab</summary>
+        </member>
+        <member name="T:TsComm.ColorSpace">
+            <summary>颜色空间</summary>
+        </member>
+        <member name="F:TsComm.ColorSpace.DIN_LAB99">
+            <summary>DIN Lab99</summary>
+        </member>
+        <member name="F:TsComm.ColorSpace.BETA_XY">
+            <summary>βxy</summary>
+        </member>
+        <member name="F:TsComm.ColorSpace.MUNSELL">
+            <summary>Munsell</summary>
+        </member>
+        <member name="F:TsComm.ColorSpace.SRGB">
+            <summary>sRGB</summary>
+        </member>
+        <member name="F:TsComm.ColorSpace.HUNTERLAB">
+            <summary> Hunter Lab</summary>
+        </member>
+        <member name="F:TsComm.ColorSpace.CIELUV">
+            <summary>CIE L*u*v*</summary>
+        </member>
+        <member name="F:TsComm.ColorSpace.CIELCH">
+            <summary>CIE L*C*h°</summary>
+        </member>
+        <member name="F:TsComm.ColorSpace.CIEYxy">
+            <summary>CIE Yxy</summary>
+        </member>
+        <member name="F:TsComm.ColorSpace.CIEXYZ">
+            <summary>CIE XYZ</summary>
+        </member>
+        <member name="F:TsComm.ColorSpace.CIELAB">
+            <summary>CIE L*a*b*</summary>
+        </member>
+        <member name="T:TsComm.StandardObserver">
+            <summary>标准观察者角度</summary>
+        </member>
+        <member name="F:TsComm.StandardObserver.CIE1964">
+            <summary>10度观察者角</summary>
+        </member>
+        <member name="F:TsComm.StandardObserver.CIE1931">
+            <summary>2度观察者角</summary>
+        </member>
+        <member name="T:TsComm.StandardIlluminant">
+            <summary>标准光源</summary>
+        </member>
+        <member name="T:TsComm.UvMode">
+            <summary>UV模式</summary>
+        </member>
+        <member name="F:TsComm.UvMode.Cut420">
+            <summary> 420截止</summary>
+        </member>
+        <member name="F:TsComm.UvMode.Cut400">
+            <summary>400截止</summary>
+        </member>
+        <member name="F:TsComm.UvMode.CutNone">
+            <summary>无截止</summary>
+        </member>
+        <member name="T:TsComm.Aperture">
+            <summary>测量口径</summary>
+        </member>
+        <member name="F:TsComm.Aperture.Phi8">
+            <summary>8mm</summary>
+        </member>
+        <member name="F:TsComm.Aperture.Phi4">
+            <summary>4mm</summary>
+        </member>
+        <member name="T:TsComm.OpticalMode">
+            <summary>反射/透射模式</summary>
+        </member>
+        <member name="F:TsComm.OpticalMode.Transitive">
+            <summary>透射</summary>
+        </member>
+        <member name="F:TsComm.OpticalMode.Reflectance">
+            <summary> 反射</summary>
+        </member>
+        <member name="T:TsComm.ScMode">
+            <summary>含光方式</summary>
+        </member>
+    </members>
+</doc>

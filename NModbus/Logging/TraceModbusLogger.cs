@@ -20,7 +20,7 @@ namespace NModbus.Logging
         {
             message = message?.Replace(Environment.NewLine, BlankHeader);
 
-            Trace.WriteLine($"[{level}]".PadRight(LevelColumnSize) + message);
+           // Trace.WriteLine($"[{level}]".PadRight(LevelColumnSize) + message);
         }
     }
 }

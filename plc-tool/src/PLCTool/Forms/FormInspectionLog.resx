@@ -1,0 +1,1668 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="txtMaxSplitTimeUsage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="lblTicketTimes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 24</value>
+  </data>
+  <data name="lblMinDetectTimeUsage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 17</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblFailedTicketTimes.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbpDetct.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="lblMinSplitTimeUsage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtTicketFailedRate.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCustomMin.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblMaxDetectQueue.Parent" xml:space="preserve">
+    <value>grbDetect</value>
+  </data>
+  <data name="treeView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 581</value>
+  </data>
+  <data name="&gt;&gt;lblMaxSplitQueue.Parent" xml:space="preserve">
+    <value>grbSplit</value>
+  </data>
+  <data name="txtKeyword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="treeView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 79</value>
+  </data>
+  <data name="&gt;&gt;txtCustomMax.Parent" xml:space="preserve">
+    <value>grbCustom</value>
+  </data>
+  <data name="grbSplit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>540, 146</value>
+  </data>
+  <data name="&gt;&gt;lblCustomMin.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtCustomMax.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblMaxDetectQueue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblMaxDetectQueue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 117</value>
+  </data>
+  <data name="lblCustomAvg.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="txtMaxDetectTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 53</value>
+  </data>
+  <data name="&gt;&gt;lblSpeed.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtAvgDetectTimeUsage.Parent" xml:space="preserve">
+    <value>grbDetect</value>
+  </data>
+  <data name="&gt;&gt;lblCheckID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtMaxDetectTimeUsage.Parent" xml:space="preserve">
+    <value>grbDetect</value>
+  </data>
+  <data name="dgvCustom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>540, 390</value>
+  </data>
+  <data name="&gt;&gt;txtMaxDetectQueue.Parent" xml:space="preserve">
+    <value>grbDetect</value>
+  </data>
+  <data name="lblSpeed.Text" xml:space="preserve">
+    <value>验布速度</value>
+  </data>
+  <data name="lblMaxDetectTimeUsage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 17</value>
+  </data>
+  <data name="&gt;&gt;grbSplit.Type" xml:space="preserve">
+    <value>PLCTool.UC.GroupBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblAvgDetectTimeUsage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCustomMin.Name" xml:space="preserve">
+    <value>txtCustomMin</value>
+  </data>
+  <data name="lblMaxDetectQueue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 17</value>
+  </data>
+  <data name="openFileDialog1.Filter" xml:space="preserve">
+    <value>*.log|*.log</value>
+  </data>
+  <data name="lblTicketFailedRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 17</value>
+  </data>
+  <data name="grbSaveImage.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;lblMaxSaveImageQueue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtAvgDetectRate.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;grbSaveImage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblAvgDetectTimeUsage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 17</value>
+  </data>
+  <data name="lblSpeed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblMaxDetectQueue.Text" xml:space="preserve">
+    <value>最高堆图数量</value>
+  </data>
+  <data name="&gt;&gt;txtKeyword.Type" xml:space="preserve">
+    <value>PLCTool.UC.TextBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="txtAvgDetectTimeUsage.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblTicketTimes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtShareQuote.Type" xml:space="preserve">
+    <value>PLCTool.UC.TextBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="grbSplit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 402</value>
+  </data>
+  <data name="lblMaxSaveImageQueue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 17</value>
+  </data>
+  <data name="txtCustomMin.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblCustomMax.Parent" xml:space="preserve">
+    <value>grbCustom</value>
+  </data>
+  <data name="lblAvgDetectTimeUsage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblSpeed.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbpCustom.Name" xml:space="preserve">
+    <value>tbpCustom</value>
+  </data>
+  <data name="&gt;&gt;lblCheckID.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtShareQuote.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblAvgDetectRate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblMaxDetectTimeUsage.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txtCheckID.Name" xml:space="preserve">
+    <value>txtCheckID</value>
+  </data>
+  <data name="lblMaxSplitTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 55</value>
+  </data>
+  <data name="dgvSplit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>540, 390</value>
+  </data>
+  <data name="&gt;&gt;txtCustomMin.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lblMaxSaveImageQueue.Parent" xml:space="preserve">
+    <value>grbSaveImage</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>查看验布日志</value>
+  </data>
+  <data name="lblCustomMax.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;txtMaxSplitTimeUsage.Type" xml:space="preserve">
+    <value>PLCTool.UC.TextBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbpSaveImage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txtCheckID.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtMaxDetectQueue.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="btnFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 49</value>
+  </data>
+  <data name="txtMaxDetectQueue.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="txtMaxDetectTimeUsage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="txtCheckID.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lblMinDetectTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 86</value>
+  </data>
+  <data name="&gt;&gt;txtTicketFailedTimes.Parent" xml:space="preserve">
+    <value>grbDetect</value>
+  </data>
+  <data name="&gt;&gt;lblTicketFailedRate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtMaxDetectTimeUsage.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtMinDetectTimeUsage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="tbpCustom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="txtSpeed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="&gt;&gt;txtCustomMin.Type" xml:space="preserve">
+    <value>PLCTool.UC.TextBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="lblMinDetectTimeUsage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="lblKeyword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="lblFailedTicketTimes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>305, 55</value>
+  </data>
+  <data name="&gt;&gt;dgvCustom.Parent" xml:space="preserve">
+    <value>tbpCustom</value>
+  </data>
+  <data name="&gt;&gt;lblKeyword.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblMaxDetectQueue.Name" xml:space="preserve">
+    <value>lblMaxDetectQueue</value>
+  </data>
+  <data name="lblMaxSplitQueue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btnLoad.Name" xml:space="preserve">
+    <value>btnLoad</value>
+  </data>
+  <data name="&gt;&gt;grbCustom.Parent" xml:space="preserve">
+    <value>tbpCustom</value>
+  </data>
+  <data name="&gt;&gt;tbpDetct.Name" xml:space="preserve">
+    <value>tbpDetct</value>
+  </data>
+  <data name="lblFailedTicketTimes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="txtTicketFailedRate.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;txtMaxDetectTimeUsage.Type" xml:space="preserve">
+    <value>PLCTool.UC.TextBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="txtMaxDetectTimeUsage.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtShareQuote.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lblAvgDetectRate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTicketTimes.Text" xml:space="preserve">
+    <value>贴标次数</value>
+  </data>
+  <data name="&gt;&gt;dgvDetect.Name" xml:space="preserve">
+    <value>dgvDetect</value>
+  </data>
+  <data name="txtSpeed.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblMinSplitTimeUsage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 17</value>
+  </data>
+  <data name="txtMinSplitTimeUsage.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tbpDetct.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnLoad.Text" xml:space="preserve">
+    <value>读取日志</value>
+  </data>
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtAvgSplitTimeUsage.Type" xml:space="preserve">
+    <value>PLCTool.UC.TextBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dgvSaveImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblTicketFailedRate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="&gt;&gt;txtMaxDetectTimeUsage.Name" xml:space="preserve">
+    <value>txtMaxDetectTimeUsage</value>
+  </data>
+  <data name="tbpSaveImage.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="lblMinDetectTimeUsage.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;lblCustomAvg.Name" xml:space="preserve">
+    <value>lblCustomAvg</value>
+  </data>
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="txtKeyword.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblKeyword.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lblKeyword.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSpeed.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;dgvSaveImage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;lblMaxDetectQueue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtAvgDetectTimeUsage.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtMaxSaveImageQueue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="lblMinSplitTimeUsage.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;txtTicketFailedRate.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtTicketFailedTimes.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="grbCustom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 402</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>tbpSaveImage</value>
+  </data>
+  <data name="&gt;&gt;lblMaxSaveImageQueue.Name" xml:space="preserve">
+    <value>lblMaxSaveImageQueue</value>
+  </data>
+  <data name="lblShareQuote.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="txtTicketFailedRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="lblFailedTicketTimes.Text" xml:space="preserve">
+    <value>贴标失败次数</value>
+  </data>
+  <data name="&gt;&gt;lblMaxDetectQueue.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="tbpDetct.Text" xml:space="preserve">
+    <value>诊断和贴标统计</value>
+  </data>
+  <data name="tbpDetct.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 555</value>
+  </data>
+  <data name="&gt;&gt;txtTicketFailedTimes.Type" xml:space="preserve">
+    <value>PLCTool.UC.TextBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="txtCustomMin.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblAvgSplitTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="lblMaxSaveImageQueue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="&gt;&gt;lblCheckID.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblFailedTicketTimes.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lblMaxSplitTimeUsage.Text" xml:space="preserve">
+    <value>处理最大耗时</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>PLCTool.BaseForm, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="txtAvgDetectTimeUsage.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="lblMaxDetectTimeUsage.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="txtTicketFailedRate.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;grbSaveImage.Type" xml:space="preserve">
+    <value>PLCTool.UC.GroupBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbpDetct.Parent" xml:space="preserve">
+    <value>tbpSaveImage</value>
+  </data>
+  <data name="lblMinSplitTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 86</value>
+  </data>
+  <data name="&gt;&gt;lblAvgDetectTimeUsage.Name" xml:space="preserve">
+    <value>lblAvgDetectTimeUsage</value>
+  </data>
+  <data name="lblCheckID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>332, 51</value>
+  </data>
+  <data name="&gt;&gt;txtCustomMax.Name" xml:space="preserve">
+    <value>txtCustomMax</value>
+  </data>
+  <data name="dgvDetect.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;grbSaveImage.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;lblAvgSplitTimeUsage.Name" xml:space="preserve">
+    <value>lblAvgSplitTimeUsage</value>
+  </data>
+  <data name="&gt;&gt;btnLoad.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtCheckID.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblKeyword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="tbpDetct.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblAvgDetectRate.Text" xml:space="preserve">
+    <value>平均诊断速度</value>
+  </data>
+  <data name="txtMaxSplitQueue.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;treeView1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txtTicketFailedTimes.Name" xml:space="preserve">
+    <value>txtTicketFailedTimes</value>
+  </data>
+  <data name="&gt;&gt;txtMaxSplitQueue.Parent" xml:space="preserve">
+    <value>grbSplit</value>
+  </data>
+  <data name="&gt;&gt;lblMinSplitTimeUsage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblMinDetectTimeUsage.Text" xml:space="preserve">
+    <value>诊断最小耗时</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="txtCheckID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 46</value>
+  </data>
+  <data name="&gt;&gt;lblAvgDetectRate.Parent" xml:space="preserve">
+    <value>grbDetect</value>
+  </data>
+  <data name="&gt;&gt;lblCustomAvg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblShareQuote.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblAvgSplitTimeUsage.Parent" xml:space="preserve">
+    <value>grbSplit</value>
+  </data>
+  <data name="&gt;&gt;txtAvgSplitTimeUsage.Name" xml:space="preserve">
+    <value>txtAvgSplitTimeUsage</value>
+  </data>
+  <data name="&gt;&gt;txtAvgDetectTimeUsage.Type" xml:space="preserve">
+    <value>PLCTool.UC.TextBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblMaxSaveImageQueue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtCheckID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="&gt;&gt;txtAvgDetectRate.Type" xml:space="preserve">
+    <value>PLCTool.UC.TextBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="txtAvgDetectRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>393, 115</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblFailedTicketTimes.Name" xml:space="preserve">
+    <value>lblFailedTicketTimes</value>
+  </data>
+  <data name="lblAvgDetectRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 17</value>
+  </data>
+  <data name="grbDetect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>540, 146</value>
+  </data>
+  <data name="&gt;&gt;txtAvgSplitTimeUsage.Parent" xml:space="preserve">
+    <value>grbSplit</value>
+  </data>
+  <data name="lblCustomMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 24</value>
+  </data>
+  <data name="txtMaxSplitQueue.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbpSaveImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>560, 581</value>
+  </data>
+  <data name="&gt;&gt;txtSpeed.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblMinDetectTimeUsage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblAvgSplitTimeUsage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 17</value>
+  </data>
+  <data name="txtMaxSplitQueue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="grbDetect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 402</value>
+  </data>
+  <data name="txtTicketFailedTimes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="txtCustomAvg.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCustomMin.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="txtMaxSplitQueue.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;txtMaxDetectQueue.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;grbCustom.Name" xml:space="preserve">
+    <value>grbCustom</value>
+  </data>
+  <data name="&gt;&gt;dgvSplit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblMaxSplitTimeUsage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTicketTimes.Name" xml:space="preserve">
+    <value>lblTicketTimes</value>
+  </data>
+  <data name="&gt;&gt;dgvCustom.Name" xml:space="preserve">
+    <value>dgvCustom</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbpCustom.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;txtAvgDetectRate.Parent" xml:space="preserve">
+    <value>grbDetect</value>
+  </data>
+  <data name="tbpCustom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 555</value>
+  </data>
+  <data name="txtKeyword.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;txtMaxSplitTimeUsage.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtCustomMax.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;grbSaveImage.Name" xml:space="preserve">
+    <value>grbSaveImage</value>
+  </data>
+  <data name="&gt;&gt;lblTicketFailedRate.Parent" xml:space="preserve">
+    <value>grbDetect</value>
+  </data>
+  <data name="lblMaxSplitQueue.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="&gt;&gt;lblMaxDetectTimeUsage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvDetect.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblAvgDetectTimeUsage.Parent" xml:space="preserve">
+    <value>grbDetect</value>
+  </data>
+  <data name="txtSpeed.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;btnLoad.Type" xml:space="preserve">
+    <value>PLCTool.UC.ButtonRadiusEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="lblMaxSplitTimeUsage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 17</value>
+  </data>
+  <data name="&gt;&gt;txtCheckID.Type" xml:space="preserve">
+    <value>PLCTool.UC.TextBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtAvgSplitTimeUsage.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblMaxSplitQueue.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;lblMinDetectTimeUsage.Parent" xml:space="preserve">
+    <value>grbDetect</value>
+  </data>
+  <data name="&gt;&gt;lblCustomMin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtMaxSplitTimeUsage.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="txtAvgSplitTimeUsage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="dgvCustom.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;lblShareQuote.Name" xml:space="preserve">
+    <value>lblShareQuote</value>
+  </data>
+  <data name="txtMaxDetectQueue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="&gt;&gt;lblMaxSplitQueue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtSpeed.Name" xml:space="preserve">
+    <value>txtSpeed</value>
+  </data>
+  <data name="lblSpeed.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtTicketFailedTimes.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="txtAvgDetectTimeUsage.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblMaxSaveImageQueue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;txtMaxSplitQueue.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;grbDetect.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtTicketFailedRate.Parent" xml:space="preserve">
+    <value>grbDetect</value>
+  </data>
+  <data name="grbSaveImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>540, 146</value>
+  </data>
+  <data name="lblAvgDetectTimeUsage.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;lblShareQuote.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvCustom.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtKeyword.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblMinSplitTimeUsage.Parent" xml:space="preserve">
+    <value>grbSplit</value>
+  </data>
+  <data name="lblAvgSplitTimeUsage.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;txtTicketFailedRate.Type" xml:space="preserve">
+    <value>PLCTool.UC.TextBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="lblAvgSplitTimeUsage.Text" xml:space="preserve">
+    <value>处理平均耗时</value>
+  </data>
+  <data name="txtTicketFailedTimes.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtMaxSplitTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 53</value>
+  </data>
+  <data name="&gt;&gt;lblTicketTimes.Parent" xml:space="preserve">
+    <value>grbDetect</value>
+  </data>
+  <data name="txtShareQuote.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="&gt;&gt;txtMaxSplitQueue.Name" xml:space="preserve">
+    <value>txtMaxSplitQueue</value>
+  </data>
+  <data name="&gt;&gt;txtTicketTimes.Parent" xml:space="preserve">
+    <value>grbDetect</value>
+  </data>
+  <data name="lblAvgDetectRate.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="lblCheckID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="grbDetect.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="txtMaxSaveImageQueue.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblMaxSplitTimeUsage.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;dgvSaveImage.Name" xml:space="preserve">
+    <value>dgvSaveImage</value>
+  </data>
+  <data name="&gt;&gt;grbSplit.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="lblMaxDetectTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 55</value>
+  </data>
+  <data name="&gt;&gt;lblCustomAvg.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblCustomAvg.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;lblMaxDetectTimeUsage.Parent" xml:space="preserve">
+    <value>grbDetect</value>
+  </data>
+  <data name="txtCustomMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="txtShareQuote.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblMaxSaveImageQueue.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="&gt;&gt;txtMaxSplitTimeUsage.Parent" xml:space="preserve">
+    <value>grbSplit</value>
+  </data>
+  <data name="&gt;&gt;txtKeyword.Name" xml:space="preserve">
+    <value>txtKeyword</value>
+  </data>
+  <data name="&gt;&gt;txtTicketTimes.Type" xml:space="preserve">
+    <value>PLCTool.UC.TextBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="lblAvgDetectRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>305, 117</value>
+  </data>
+  <data name="lblCustomAvg.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;txtMinSplitTimeUsage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtMinSplitTimeUsage.Name" xml:space="preserve">
+    <value>txtMinSplitTimeUsage</value>
+  </data>
+  <data name="txtCustomMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>261, 55</value>
+  </data>
+  <data name="&gt;&gt;lblAvgSplitTimeUsage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grbDetect.Name" xml:space="preserve">
+    <value>grbDetect</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>保存图片统计</value>
+  </data>
+  <data name="txtTicketTimes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="btnLoad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="lblAvgDetectTimeUsage.Text" xml:space="preserve">
+    <value>诊断平均耗时</value>
+  </data>
+  <data name="&gt;&gt;lblFailedTicketTimes.Parent" xml:space="preserve">
+    <value>grbDetect</value>
+  </data>
+  <data name="&gt;&gt;txtSpeed.Type" xml:space="preserve">
+    <value>PLCTool.UC.TextBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="lblCustomAvg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 17</value>
+  </data>
+  <data name="&gt;&gt;lblMinSplitTimeUsage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtAvgDetectRate.Name" xml:space="preserve">
+    <value>txtAvgDetectRate</value>
+  </data>
+  <data name="txtCustomAvg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="txtAvgSplitTimeUsage.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;txtMaxSplitQueue.Type" xml:space="preserve">
+    <value>PLCTool.UC.TextBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="lblSpeed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>692, 51</value>
+  </data>
+  <data name="&gt;&gt;txtAvgDetectTimeUsage.Name" xml:space="preserve">
+    <value>txtAvgDetectTimeUsage</value>
+  </data>
+  <data name="&gt;&gt;lblShareQuote.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txtAvgDetectTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 22</value>
+  </data>
+  <data name="&gt;&gt;lblCustomAvg.Parent" xml:space="preserve">
+    <value>grbCustom</value>
+  </data>
+  <data name="dgvSaveImage.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="lblKeyword.Text" xml:space="preserve">
+    <value>关键字</value>
+  </data>
+  <data name="txtShareQuote.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;txtMaxSplitTimeUsage.Name" xml:space="preserve">
+    <value>txtMaxSplitTimeUsage</value>
+  </data>
+  <data name="&gt;&gt;lblMaxSplitQueue.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblAvgDetectRate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btnLoad.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblCustomMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 17</value>
+  </data>
+  <data name="txtMinDetectTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 84</value>
+  </data>
+  <data name="&gt;&gt;txtCheckID.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txtAvgDetectRate.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;lblTicketTimes.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;btnFilter.Parent" xml:space="preserve">
+    <value>grbCustom</value>
+  </data>
+  <data name="lblMaxDetectTimeUsage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="&gt;&gt;lblSpeed.Name" xml:space="preserve">
+    <value>lblSpeed</value>
+  </data>
+  <data name="lblFailedTicketTimes.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lblAvgSplitTimeUsage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="&gt;&gt;lblCustomMax.Name" xml:space="preserve">
+    <value>lblCustomMax</value>
+  </data>
+  <data name="txtTicketTimes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>393, 22</value>
+  </data>
+  <data name="&gt;&gt;grbSplit.Name" xml:space="preserve">
+    <value>grbSplit</value>
+  </data>
+  <data name="lblMaxSplitQueue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 17</value>
+  </data>
+  <data name="&gt;&gt;txtMinDetectTimeUsage.Parent" xml:space="preserve">
+    <value>grbDetect</value>
+  </data>
+  <data name="&gt;&gt;txtCustomAvg.Parent" xml:space="preserve">
+    <value>grbCustom</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="txtAvgSplitTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 22</value>
+  </data>
+  <data name="grbCustom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>540, 146</value>
+  </data>
+  <data name="grbSplit.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;txtTicketFailedRate.Name" xml:space="preserve">
+    <value>txtTicketFailedRate</value>
+  </data>
+  <data name="lblMinSplitTimeUsage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="lblAvgDetectRate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="&gt;&gt;txtCustomAvg.Name" xml:space="preserve">
+    <value>txtCustomAvg</value>
+  </data>
+  <data name="&gt;&gt;txtKeyword.Parent" xml:space="preserve">
+    <value>grbCustom</value>
+  </data>
+  <data name="txtSpeed.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblTicketTimes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="lblTicketFailedRate.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="lblCustomMax.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="lblMaxSplitQueue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 117</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>tbpSaveImage</value>
+  </data>
+  <data name="&gt;&gt;txtMaxDetectQueue.Type" xml:space="preserve">
+    <value>PLCTool.UC.TextBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="lblTicketFailedRate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblFailedTicketTimes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;txtMaxSaveImageQueue.Parent" xml:space="preserve">
+    <value>grbSaveImage</value>
+  </data>
+  <data name="txtAvgSplitTimeUsage.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;txtShareQuote.Name" xml:space="preserve">
+    <value>txtShareQuote</value>
+  </data>
+  <data name="lblMaxSplitQueue.Text" xml:space="preserve">
+    <value>最高堆图数量</value>
+  </data>
+  <data name="txtMaxDetectQueue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 115</value>
+  </data>
+  <data name="&gt;&gt;lblKeyword.Parent" xml:space="preserve">
+    <value>grbCustom</value>
+  </data>
+  <data name="lblTicketFailedRate.Text" xml:space="preserve">
+    <value>失败率</value>
+  </data>
+  <data name="&gt;&gt;treeView1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnFilter.Type" xml:space="preserve">
+    <value>PLCTool.UC.ButtonRadiusEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblMaxSplitTimeUsage.Parent" xml:space="preserve">
+    <value>grbSplit</value>
+  </data>
+  <data name="txtCustomAvg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>261, 86</value>
+  </data>
+  <data name="&gt;&gt;tbpCustom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;treeView1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtTicketFailedTimes.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txtCustomMin.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="txtMinSplitTimeUsage.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;txtMaxDetectTimeUsage.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="txtMinSplitTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 84</value>
+  </data>
+  <data name="&gt;&gt;lblCustomMin.Name" xml:space="preserve">
+    <value>lblCustomMin</value>
+  </data>
+  <data name="lblAvgDetectTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="&gt;&gt;txtMinDetectTimeUsage.Type" xml:space="preserve">
+    <value>PLCTool.UC.TextBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtMinSplitTimeUsage.Parent" xml:space="preserve">
+    <value>grbSplit</value>
+  </data>
+  <data name="&gt;&gt;btnFilter.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtTicketTimes.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="treeView1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;dgvDetect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;lblMinDetectTimeUsage.Name" xml:space="preserve">
+    <value>lblMinDetectTimeUsage</value>
+  </data>
+  <data name="&gt;&gt;dgvDetect.Parent" xml:space="preserve">
+    <value>tbpDetct</value>
+  </data>
+  <data name="&gt;&gt;lblAvgDetectRate.Name" xml:space="preserve">
+    <value>lblAvgDetectRate</value>
+  </data>
+  <data name="lblCustomMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="lblKeyword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 17</value>
+  </data>
+  <data name="&gt;&gt;txtMaxSaveImageQueue.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtMaxSaveImageQueue.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtMinSplitTimeUsage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="txtMaxSaveImageQueue.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="lblTicketTimes.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="grbDetect.Text" xml:space="preserve">
+    <value>统计信息</value>
+  </data>
+  <data name="&gt;&gt;lblMinDetectTimeUsage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFailedTicketTimes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 17</value>
+  </data>
+  <data name="lblTicketTimes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 17</value>
+  </data>
+  <data name="txtMaxSplitTimeUsage.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCustomMax.Text" xml:space="preserve">
+    <value>最大值</value>
+  </data>
+  <data name="lblMaxDetectQueue.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="lblMaxSaveImageQueue.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lblCustomMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 57</value>
+  </data>
+  <data name="lblCustomMin.Text" xml:space="preserve">
+    <value>最小值</value>
+  </data>
+  <data name="tbpCustom.Text" xml:space="preserve">
+    <value>自定义统计</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblShareQuote.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="dgvSaveImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="&gt;&gt;dgvSplit.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;txtAvgDetectRate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;grbCustom.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtCustomMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="&gt;&gt;treeView1.Name" xml:space="preserve">
+    <value>treeView1</value>
+  </data>
+  <data name="lblShareQuote.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="txtKeyword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 22</value>
+  </data>
+  <data name="txtMinDetectTimeUsage.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtCustomMax.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;lblMaxSplitQueue.Name" xml:space="preserve">
+    <value>lblMaxSplitQueue</value>
+  </data>
+  <data name="&gt;&gt;lblAvgDetectRate.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblMaxDetectTimeUsage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tbpSaveImage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnLoad.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblShareQuote.Text" xml:space="preserve">
+    <value>切图份数</value>
+  </data>
+  <data name="lblMinDetectTimeUsage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;txtCustomAvg.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblTicketTimes.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="lblMaxSaveImageQueue.Text" xml:space="preserve">
+    <value>最高堆图数量</value>
+  </data>
+  <data name="&gt;&gt;tbpSaveImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtMinDetectTimeUsage.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtTicketFailedTimes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>393, 53</value>
+  </data>
+  <data name="&gt;&gt;lblCheckID.Name" xml:space="preserve">
+    <value>lblCheckID</value>
+  </data>
+  <data name="dgvSplit.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="tbpSaveImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>314, 79</value>
+  </data>
+  <data name="&gt;&gt;lblCustomMax.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txtMaxSplitQueue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 115</value>
+  </data>
+  <data name="lblCheckID.Text" xml:space="preserve">
+    <value>检验单ID</value>
+  </data>
+  <data name="txtMaxDetectTimeUsage.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;tbpCustom.Parent" xml:space="preserve">
+    <value>tbpSaveImage</value>
+  </data>
+  <data name="&gt;&gt;grbSplit.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtAvgDetectRate.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtTicketFailedRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>393, 82</value>
+  </data>
+  <data name="lblCheckID.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="txtAvgSplitTimeUsage.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;dgvSplit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblCustomMax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblShareQuote.Location" type="System.Drawing.Point, System.Drawing">
+    <value>508, 51</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog1.Name" xml:space="preserve">
+    <value>openFileDialog1</value>
+  </data>
+  <data name="&gt;&gt;lblMaxDetectTimeUsage.Name" xml:space="preserve">
+    <value>lblMaxDetectTimeUsage</value>
+  </data>
+  <data name="txtMinDetectTimeUsage.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblMaxSplitTimeUsage.Name" xml:space="preserve">
+    <value>lblMaxSplitTimeUsage</value>
+  </data>
+  <data name="&gt;&gt;grbDetect.Parent" xml:space="preserve">
+    <value>tbpDetct</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>图片处理统计</value>
+  </data>
+  <data name="&gt;&gt;txtMaxSaveImageQueue.Type" xml:space="preserve">
+    <value>PLCTool.UC.TextBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="txtMinSplitTimeUsage.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblCustomAvg.Text" xml:space="preserve">
+    <value>平均值</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormInspectionLog</value>
+  </data>
+  <data name="lblCustomAvg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 88</value>
+  </data>
+  <data name="txtCustomMax.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnLoad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 41</value>
+  </data>
+  <data name="lblMaxDetectQueue.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="&gt;&gt;dgvCustom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtCustomMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>261, 22</value>
+  </data>
+  <data name="&gt;&gt;txtCustomAvg.Type" xml:space="preserve">
+    <value>PLCTool.UC.TextBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="txtMaxDetectQueue.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbpDetct.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="lblMaxSplitTimeUsage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCustomMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="lblMinSplitTimeUsage.Text" xml:space="preserve">
+    <value>处理最小耗时</value>
+  </data>
+  <data name="txtAvgDetectRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="&gt;&gt;txtCustomMax.Type" xml:space="preserve">
+    <value>PLCTool.UC.TextBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="txtSpeed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>751, 46</value>
+  </data>
+  <data name="&gt;&gt;txtMaxSaveImageQueue.Name" xml:space="preserve">
+    <value>txtMaxSaveImageQueue</value>
+  </data>
+  <data name="&gt;&gt;txtSpeed.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="grbSaveImage.Text" xml:space="preserve">
+    <value>统计信息</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>897, 681</value>
+  </data>
+  <data name="btnFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;lblAvgDetectTimeUsage.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtShareQuote.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblMinSplitTimeUsage.Name" xml:space="preserve">
+    <value>lblMinSplitTimeUsage</value>
+  </data>
+  <data name="txtAvgDetectTimeUsage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="grbCustom.Text" xml:space="preserve">
+    <value>筛选统计</value>
+  </data>
+  <data name="dgvSaveImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>540, 390</value>
+  </data>
+  <data name="dgvDetect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>540, 390</value>
+  </data>
+  <data name="txtTicketTimes.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;txtMinSplitTimeUsage.Type" xml:space="preserve">
+    <value>PLCTool.UC.TextBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="txtMaxSplitTimeUsage.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtTicketTimes.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;tbpSaveImage.Name" xml:space="preserve">
+    <value>tbpSaveImage</value>
+  </data>
+  <data name="&gt;&gt;txtCustomMin.Parent" xml:space="preserve">
+    <value>grbCustom</value>
+  </data>
+  <data name="lblAvgSplitTimeUsage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbpCustom.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dgvSaveImage.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;lblTicketFailedRate.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="dgvSplit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="&gt;&gt;lblCustomMin.Parent" xml:space="preserve">
+    <value>grbCustom</value>
+  </data>
+  <data name="lblMaxSplitTimeUsage.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lblMaxSplitTimeUsage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 555</value>
+  </data>
+  <data name="txtMinDetectTimeUsage.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;lblKeyword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grbDetect.Type" xml:space="preserve">
+    <value>PLCTool.UC.GroupBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbpCustom.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtMinDetectTimeUsage.Name" xml:space="preserve">
+    <value>txtMinDetectTimeUsage</value>
+  </data>
+  <data name="lblTicketFailedRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 84</value>
+  </data>
+  <data name="&gt;&gt;grbCustom.Type" xml:space="preserve">
+    <value>PLCTool.UC.GroupBoxEx, PLCTool, Version=1.3.6.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="grbCustom.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;txtMaxDetectQueue.Name" xml:space="preserve">
+    <value>txtMaxDetectQueue</value>
+  </data>
+  <data name="&gt;&gt;lblTicketFailedRate.Name" xml:space="preserve">
+    <value>lblTicketFailedRate</value>
+  </data>
+  <data name="&gt;&gt;btnFilter.Name" xml:space="preserve">
+    <value>btnFilter</value>
+  </data>
+  <data name="txtMaxSaveImageQueue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 22</value>
+  </data>
+  <data name="btnFilter.Text" xml:space="preserve">
+    <value>筛选</value>
+  </data>
+  <data name="dgvCustom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="txtCustomAvg.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;txtTicketTimes.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;txtTicketTimes.Name" xml:space="preserve">
+    <value>txtTicketTimes</value>
+  </data>
+  <data name="&gt;&gt;tbpDetct.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblAvgDetectTimeUsage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 555</value>
+  </data>
+  <data name="dgvDetect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="&gt;&gt;dgvSplit.Name" xml:space="preserve">
+    <value>dgvSplit</value>
+  </data>
+  <data name="lblMaxDetectTimeUsage.Text" xml:space="preserve">
+    <value>诊断最大耗时</value>
+  </data>
+  <data name="txtCustomAvg.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblCustomMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 17</value>
+  </data>
+  <data name="txtShareQuote.Location" type="System.Drawing.Point, System.Drawing">
+    <value>567, 46</value>
+  </data>
+  <data name="grbSplit.Text" xml:space="preserve">
+    <value>统计信息</value>
+  </data>
+  <data name="lblCheckID.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblKeyword.Name" xml:space="preserve">
+    <value>lblKeyword</value>
+  </data>
+  <data name="&gt;&gt;txtCheckID.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtKeyword.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lblSpeed.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblAvgSplitTimeUsage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="grbSaveImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 402</value>
+  </data>
+  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

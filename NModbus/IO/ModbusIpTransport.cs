@@ -75,7 +75,7 @@ namespace NModbus.IO
             byte[] transactionId = BitConverter.GetBytes(IPAddress.HostToNetworkOrder((short)message.TransactionId));
             byte[] length = BitConverter.GetBytes(IPAddress.HostToNetworkOrder((short)(message.ProtocolDataUnit.Length + 1)));
 
-            var stream = new MemoryStream(7);
+            MemoryStream stream = new MemoryStream(7);
             stream.Write(transactionId, 0, transactionId.Length);
             stream.WriteByte(0);
             stream.WriteByte(0);

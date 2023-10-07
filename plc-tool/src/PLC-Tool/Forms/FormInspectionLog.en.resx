@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnLoad.Text" xml:space="preserve">
+    <value>ReadLog</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblCheckID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 50</value>
+  </data>
+  <data name="lblCheckID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 12</value>
+  </data>
+  <data name="lblCheckID.Text" xml:space="preserve">
+    <value>InspectionFormID</value>
+  </data>
+  <data name="lblShareQuote.Location" type="System.Drawing.Point, System.Drawing">
+    <value>520, 50</value>
+  </data>
+  <data name="lblShareQuote.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="lblShareQuote.Text" xml:space="preserve">
+    <value>CutNum</value>
+  </data>
+  <data name="lblSpeed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>691, 50</value>
+  </data>
+  <data name="lblSpeed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 12</value>
+  </data>
+  <data name="lblSpeed.Text" xml:space="preserve">
+    <value>DetectSpeed</value>
+  </data>
+  <data name="txtSpeed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>768, 46</value>
+  </data>
+  <data name="txtAvgDetectTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 22</value>
+  </data>
+  <data name="lblAvgDetectTimeUsage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 17</value>
+  </data>
+  <data name="lblAvgDetectTimeUsage.Text" xml:space="preserve">
+    <value>AverageTimeCost</value>
+  </data>
+  <data name="txtMaxDetectTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 53</value>
+  </data>
+  <data name="lblMaxDetectTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 55</value>
+  </data>
+  <data name="lblMaxDetectTimeUsage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 17</value>
+  </data>
+  <data name="lblMaxDetectTimeUsage.Text" xml:space="preserve">
+    <value>MaxTimeCost</value>
+  </data>
+  <data name="txtMaxDetectQueue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 115</value>
+  </data>
+  <data name="lblMaxDetectQueue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 117</value>
+  </data>
+  <data name="lblMaxDetectQueue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="lblMaxDetectQueue.Text" xml:space="preserve">
+    <value>MaxPictureNum</value>
+  </data>
+  <data name="txtTicketFailedRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>393, 84</value>
+  </data>
+  <data name="lblTicketFailedRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>334, 86</value>
+  </data>
+  <data name="lblTicketFailedRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 17</value>
+  </data>
+  <data name="lblTicketFailedRate.Text" xml:space="preserve">
+    <value>FailRate</value>
+  </data>
+  <data name="lblFailedTicketTimes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>298, 55</value>
+  </data>
+  <data name="lblFailedTicketTimes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 17</value>
+  </data>
+  <data name="lblFailedTicketTimes.Text" xml:space="preserve">
+    <value>TicketFailNum</value>
+  </data>
+  <data name="lblTicketTimes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>317, 24</value>
+  </data>
+  <data name="lblTicketTimes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 17</value>
+  </data>
+  <data name="lblTicketTimes.Text" xml:space="preserve">
+    <value>TicketNum</value>
+  </data>
+  <data name="lblAvgDetectRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>257, 117</value>
+  </data>
+  <data name="lblAvgDetectRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 17</value>
+  </data>
+  <data name="lblAvgDetectRate.Text" xml:space="preserve">
+    <value>AverageDetectSpeed</value>
+  </data>
+  <data name="lblMinDetectTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 86</value>
+  </data>
+  <data name="lblMinDetectTimeUsage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 17</value>
+  </data>
+  <data name="lblMinDetectTimeUsage.Text" xml:space="preserve">
+    <value>MinTimeCost</value>
+  </data>
+  <data name="txtMinDetectTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 84</value>
+  </data>
+  <data name="grbDetect.Text" xml:space="preserve">
+    <value>SummaryInfo</value>
+  </data>
+  <data name="tbpDetct.Text" xml:space="preserve">
+    <value>DetectAndTicketSummary</value>
+  </data>
+  <data name="lblMinSplitTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 84</value>
+  </data>
+  <data name="lblMinSplitTimeUsage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 17</value>
+  </data>
+  <data name="lblMinSplitTimeUsage.Text" xml:space="preserve">
+    <value>MinTimeCost</value>
+  </data>
+  <data name="txtMinSplitTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 82</value>
+  </data>
+  <data name="lblAvgSplitTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 22</value>
+  </data>
+  <data name="lblAvgSplitTimeUsage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 17</value>
+  </data>
+  <data name="lblAvgSplitTimeUsage.Text" xml:space="preserve">
+    <value>AverageTimeCost</value>
+  </data>
+  <data name="txtAvgSplitTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 20</value>
+  </data>
+  <data name="lblMaxSplitTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 53</value>
+  </data>
+  <data name="lblMaxSplitTimeUsage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 17</value>
+  </data>
+  <data name="lblMaxSplitTimeUsage.Text" xml:space="preserve">
+    <value>MaxTimeCost</value>
+  </data>
+  <data name="txtMaxSplitTimeUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 51</value>
+  </data>
+  <data name="lblMaxSplitQueue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 115</value>
+  </data>
+  <data name="lblMaxSplitQueue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="lblMaxSplitQueue.Text" xml:space="preserve">
+    <value>MaxPictureNum</value>
+  </data>
+  <data name="txtMaxSplitQueue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 113</value>
+  </data>
+  <data name="grbSplit.Text" xml:space="preserve">
+    <value>SummaryInfo</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>PictureProcessSummary</value>
+  </data>
+  <data name="lblMaxSaveImageQueue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="lblMaxSaveImageQueue.Text" xml:space="preserve">
+    <value>MaxPictureNum</value>
+  </data>
+  <data name="txtMaxSaveImageQueue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 22</value>
+  </data>
+  <data name="grbSaveImage.Text" xml:space="preserve">
+    <value>SummaryInfo</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>SavePictureSummary</value>
+  </data>
+  <data name="btnFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 53</value>
+  </data>
+  <data name="btnFilter.Text" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="lblKeyword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 17</value>
+  </data>
+  <data name="lblKeyword.Text" xml:space="preserve">
+    <value>KeyWord</value>
+  </data>
+  <data name="txtCustomAvg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>280, 86</value>
+  </data>
+  <data name="txtKeyword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 22</value>
+  </data>
+  <data name="lblCustomAvg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 86</value>
+  </data>
+  <data name="lblCustomAvg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 17</value>
+  </data>
+  <data name="lblCustomAvg.Text" xml:space="preserve">
+    <value>AverageValue</value>
+  </data>
+  <data name="txtCustomMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>280, 54</value>
+  </data>
+  <data name="lblCustomMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 56</value>
+  </data>
+  <data name="lblCustomMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 17</value>
+  </data>
+  <data name="lblCustomMin.Text" xml:space="preserve">
+    <value>MinValue</value>
+  </data>
+  <data name="txtCustomMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>280, 22</value>
+  </data>
+  <data name="lblCustomMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 17</value>
+  </data>
+  <data name="lblCustomMax.Text" xml:space="preserve">
+    <value>MaxValue</value>
+  </data>
+  <data name="grbCustom.Text" xml:space="preserve">
+    <value>FilteringSummary</value>
+  </data>
+  <data name="tbpCustom.Text" xml:space="preserve">
+    <value>CustomSummary</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>View Detect Log</value>
+  </data>
+</root>

@@ -10,7 +10,7 @@ namespace NModbus.Message
     ///     Class holding all implementation shared between two or more message types.
     ///     Interfaces expose subsets of type specific implementations.
     /// </summary>
-    internal class ModbusMessageImpl
+    public class ModbusMessageImpl
     {
         // smallest supported message frame size (sans checksum)
         private const int MinimumFrameSize = 2;
@@ -26,38 +26,75 @@ namespace NModbus.Message
             FunctionCode = functionCode;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public byte? ByteCount { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public byte? ExceptionCode { get; set; }
 
+        /// <summary>
+        /// 事务处理标识符：确认发出和受到的信息属于同一个序列，每次通信后就要加1；
+        /// </summary>
         public ushort TransactionId { get; set; }
+
+        /// <summary>
+        /// 功能码
+        /// </summary>
 
         public byte FunctionCode { get; set; }
 
+        /// <summary>
+        ///长度：用于说明此字节之后还有多少个字节的数
+        /// </summary>
         public ushort? NumberOfPoints { get; set; }
 
+        /// <summary>
+        /// 设备地址，在slave中对应其ID；
+        /// </summary>
         public byte SlaveAddress { get; set; }
 
+
+        /// <summary>
+        /// 
+        /// </summary>
         public ushort? StartAddress { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
 
         public ushort? SubFunctionCode { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public IModbusMessageDataCollection Data { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public byte[] MessageFrame
         {
             get
             {
-                var pdu = ProtocolDataUnit;
-                var frame = new MemoryStream(1 + pdu.Length);
+                byte[] pdu = ProtocolDataUnit;
+                MemoryStream frame = new MemoryStream(1 + pdu.Length);
 
                 frame.WriteByte(SlaveAddress);
                 frame.Write(pdu, 0, pdu.Length);
 
-                return frame.ToArray();
+                var msg = frame.ToArray();
+                return msg;
             }
         }
 
+        /// <summary>
+        /// 协议数据单元
+        /// </summary>
         public byte[] ProtocolDataUnit
         {
             get
@@ -78,7 +115,10 @@ namespace NModbus.Message
 
                 if (StartAddress.HasValue)
                 {
-                    pdu.AddRange(BitConverter.GetBytes(IPAddress.HostToNetworkOrder((short)StartAddress.Value)));
+                    //将整数值由主机字节顺序转换为网络字节顺序
+                    short value = IPAddress.HostToNetworkOrder((short)StartAddress.Value);
+                    byte[] address = BitConverter.GetBytes(value);
+                    pdu.AddRange(address);
                 }
 
                 if (NumberOfPoints.HasValue)
@@ -100,21 +140,32 @@ namespace NModbus.Message
             }
         }
 
-        public void Initialize(byte[] frame)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="frameBody"></param>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="FormatException"></exception>
+        public void Initialize(byte[] frameBody)
         {
-            if (frame == null)
+            if (frameBody == null)
             {
-                throw new ArgumentNullException(nameof(frame), "Argument frame cannot be null.");
+                throw new ArgumentNullException(nameof(frameBody), "Argument frame cannot be null.");
             }
 
-            if (frame.Length < MinimumFrameSize)
+            if (frameBody.Length < MinimumFrameSize)
             {
                 string msg = $"Message frame must contain at least {MinimumFrameSize} bytes of data.";
                 throw new FormatException(msg);
             }
 
-            SlaveAddress = frame[0];
-            FunctionCode = frame[1];
+            SlaveAddress = frameBody[0];
+            FunctionCode = frameBody[1];
+        }
+
+        public override string ToString()
+        {
+            return Newtonsoft.Json.JsonConvert.SerializeObject(this);
         }
     }
 }

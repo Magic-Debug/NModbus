@@ -214,7 +214,8 @@ namespace NModbus.Device
 					slaveAddress,
 					registerAddress,
 					value);
-
+		var content=	request.ToString();
+			System.Diagnostics.Debug.WriteLine(content);
 			Transport.UnicastMessage<WriteSingleRegisterRequestResponse>(request);
 		}
 

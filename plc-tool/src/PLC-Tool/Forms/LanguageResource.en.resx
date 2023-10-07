@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FormAddLogColumn_AddressIncorrectMsg" xml:space="preserve">
+    <value>Adress format incorrect!</value>
+  </data>
+  <data name="FormAddLogColumn_ExistNameMsg" xml:space="preserve">
+    <value>The name has already exists!</value>
+  </data>
+  <data name="FormAddLogColumn_SelectDataTypeMsg" xml:space="preserve">
+    <value>Please select the data type!</value>
+  </data>
+  <data name="FormChangePassword_ChangePswSuccessMsg" xml:space="preserve">
+    <value>Changed pasword successful!</value>
+  </data>
+  <data name="FormChangePassword_NewPswEmptyMsg" xml:space="preserve">
+    <value>New pasword can't be empty!</value>
+  </data>
+  <data name="FormChangePassword_PswIncorrectMsg" xml:space="preserve">
+    <value>Old password incorret!</value>
+  </data>
+  <data name="FormChangePassword_PswNotMatchMsg" xml:space="preserve">
+    <value>The password entered twice is inconsistent, please re-enter it!</value>
+  </data>
+  <data name="FormLogin_PswErrMsg" xml:space="preserve">
+    <value>Password incorret!</value>
+  </data>
+  <data name="FormLogSetting_DeleteColumn" xml:space="preserve">
+    <value>Delete column</value>
+  </data>
+  <data name="FormLogSetting_DeleteRowMsg" xml:space="preserve">
+    <value>Are you sure to delete {0}?</value>
+  </data>
+  <data name="FormLogSetting_NotSelectDeleteRowMsg" xml:space="preserve">
+    <value>Please select the row you want to delete.</value>
+  </data>
+  <data name="FormLogSetting_NotSelectEditRowMsg" xml:space="preserve">
+    <value>Please select the row you want to edit.</value>
+  </data>
+  <data name="FormMain_ConnectedInfo" xml:space="preserve">
+    <value>Online</value>
+  </data>
+  <data name="FormMain_LeatherLabel22" xml:space="preserve">
+    <value>Winding speed (m/s)</value>
+  </data>
+  <data name="FormMain_NotConnectedInfo" xml:space="preserve">
+    <value>OffLine</value>
+  </data>
+  <data name="FormMain_XinyuanLabel23" xml:space="preserve">
+    <value>Differential speed of in and out cloth</value>
+  </data>
+  <data name="FormMsg_CloseMonitorInfo" xml:space="preserve">
+    <value>Stop monitor</value>
+  </data>
+  <data name="FormMsg_CloseMonitorMsg" xml:space="preserve">
+    <value>Monitor has been turn off.
+
+</value>
+  </data>
+  <data name="FormMsg_FormatIncorrectMsg" xml:space="preserve">
+    <value>Incorrent command!
+
+</value>
+  </data>
+  <data name="FormMsg_NotConnectedErrMsg" xml:space="preserve">
+    <value>Not connected, unable to send command!
+
+</value>
+  </data>
+  <data name="FormMsg_OpenMonitorInfo" xml:space="preserve">
+    <value>Start monitor</value>
+  </data>
+  <data name="FormMsg_OpenMonitorMsg" xml:space="preserve">
+    <value>Monitor has been turn on.
+
+</value>
+  </data>
+  <data name="FormMsg_ReceiveFormat" xml:space="preserve">
+    <value>{0}  Receive </value>
+  </data>
+  <data name="FormMsg_SendFormat" xml:space="preserve">
+    <value>{0}  Send </value>
+  </data>
+  <data name="FormMsg_StartCounterInfo" xml:space="preserve">
+    <value>Resume counter</value>
+  </data>
+  <data name="FormMsg_StartReadingMsg" xml:space="preserve">
+    <value>Start reading data
+
+</value>
+  </data>
+  <data name="FormMsg_StopCounterInfo" xml:space="preserve">
+    <value>Suspend counter</value>
+  </data>
+  <data name="FormMsg_StopReadingMsg" xml:space="preserve">
+    <value>Stop reading data
+
+</value>
+  </data>
+  <data name="FormMsg_StopReadingMsg2" xml:space="preserve">
+    <value>Suspend reading data {0} ms
+
+</value>
+  </data>
+  <data name="FormAddLogColumn_AddLogColumnTitle" xml:space="preserve">
+    <value>Add Column</value>
+  </data>
+  <data name="FormAddLogColumn_EditLogColumnTitle" xml:space="preserve">
+    <value>Edit Column</value>
+  </data>
+  <data name="FormLog_NotFoundAlarmMsg" xml:space="preserve">
+    <value>Not found alarm status.</value>
+  </data>
+  <data name="FormLog_NotFoundChangeMsg" xml:space="preserve">
+    <value>Not found status changed.</value>
+  </data>
+  <data name="FormIOStatus_ExportSuccessMsg" xml:space="preserve">
+    <value>Export Success.</value>
+  </data>
+  <data name="FormIOStatus_SaveSuccessMsg" xml:space="preserve">
+    <value>Save Success.</value>
+  </data>
+  <data name="FormWidthData_FileNameTitle" xml:space="preserve">
+    <value>File name</value>
+  </data>
+  <data name="FormWidthData_NotCodeLengthOffsetMsg" xml:space="preserve">
+    <value>The code length offset cannot be empty!</value>
+  </data>
+  <data name="FormWidthData_NotNetWeightMsg" xml:space="preserve">
+    <value>The net weight cannot be empty!</value>
+  </data>
+  <data name="FormWidthData_NumbersCodeLengthOffsetMsg" xml:space="preserve">
+    <value>You can only enter numbers for the code length offset!</value>
+  </data>
+  <data name="FormWidthData_NumbersNetWeightMsg" xml:space="preserve">
+    <value>Only numbers can be entered for net weight!</value>
+  </data>
+  <data name="FormWidthData_WidthTitle" xml:space="preserve">
+    <value>Width</value>
+  </data>
+  <data name="FormWidthData_YardLengthTitle" xml:space="preserve">
+    <value>Yard length</value>
+  </data>
+  <data name="FormMain_FineTensionAdjustmentRange_Add" xml:space="preserve">
+    <value>FineTensionAdjustmentRange+</value>
+  </data>
+  <data name="FormMain_ClothOutSpeed" xml:space="preserve">
+    <value>ClothOutSpeed</value>
+  </data>
+  <data name="FormColourDifference_AAsterisk" xml:space="preserve">
+    <value>a*</value>
+  </data>
+  <data name="FormColourDifference_AllSamples" xml:space="preserve">
+    <value>All Samples</value>
+    <comment>MenuItem</comment>
+  </data>
+  <data name="FormColourDifference_Auto" xml:space="preserve">
+    <value>Auto</value>
+    <comment>LensSwitchMode</comment>
+  </data>
+  <data name="FormColourDifference_BAsterisk" xml:space="preserve">
+    <value>b*</value>
+  </data>
+  <data name="FormColourDifference_BETA_XY" xml:space="preserve">
+    <value>βxy</value>
+    <comment>ColorSpace</comment>
+  </data>
+  <data name="FormColourDifference_BlackCalibrationCompleted" xml:space="preserve">
+    <value>Black calibration completed</value>
+  </data>
+  <data name="FormColourDifference_CalibrationFailed" xml:space="preserve">
+    <value>Calibration failed</value>
+    <comment>Error code description</comment>
+  </data>
+  <data name="FormColourDifference_CDECMC" xml:space="preserve">
+    <value>CMC</value>
+  </data>
+  <data name="FormColourDifference_CDECMC11" xml:space="preserve">
+    <value>CMC(1:1)</value>
+  </data>
+  <data name="FormColourDifference_CIE1931" xml:space="preserve">
+    <value>2°(CIE1931)</value>
+    <comment>StandardObserver</comment>
+  </data>
+  <data name="FormColourDifference_CIE1964" xml:space="preserve">
+    <value>10°(CIE1964)</value>
+    <comment>StandardObserver</comment>
+  </data>
+  <data name="FormColourDifference_CIEDE" xml:space="preserve">
+    <value>ΔE*ab</value>
+  </data>
+  <data name="FormColourDifference_CIEDE2000" xml:space="preserve">
+    <value>ΔE*00</value>
+  </data>
+  <data name="FormColourDifference_CIEDE94" xml:space="preserve">
+    <value>ΔE*94</value>
+  </data>
+  <data name="FormColourDifference_CIELAB" xml:space="preserve">
+    <value>CIE Lab</value>
+    <comment>ColorSpace</comment>
+  </data>
+  <data name="FormColourDifference_CIELCH" xml:space="preserve">
+    <value>CIE LCh</value>
+    <comment>ColorSpace</comment>
+  </data>
+  <data name="FormColourDifference_CIELUV" xml:space="preserve">
+    <value>CIE Luv</value>
+    <comment>ColorSpace</comment>
+  </data>
+  <data name="FormColourDifference_CIEXYZ" xml:space="preserve">
+    <value>CIE XYZ</value>
+    <comment>ColorSpace</comment>
+  </data>
+  <data name="FormColourDifference_CIEYxy" xml:space="preserve">
+    <value>CIE Yxy</value>
+    <comment>ColorSpace</comment>
+  </data>
+  <data name="FormColourDifference_COLOR_FASTNESS" xml:space="preserve">
+    <value>Color Fastness</value>
+  </data>
+  <data name="FormColourDifference_Connect" xml:space="preserve">
+    <value>Connect</value>
+    <comment>button name</comment>
+  </data>
+  <data name="FormColourDifference_Cut400" xml:space="preserve">
+    <value>Cut 400nm</value>
+    <comment>UvMode</comment>
+  </data>
+  <data name="FormColourDifference_Cut420" xml:space="preserve">
+    <value>Cut 420nm</value>
+    <comment>UvMode</comment>
+  </data>
+  <data name="FormColourDifference_Cut460" xml:space="preserve">
+    <value>Cut 460nm</value>
+    <comment>UvMode</comment>
+  </data>
+  <data name="FormColourDifference_CutNone" xml:space="preserve">
+    <value>Cut None</value>
+    <comment>UvMode</comment>
+  </data>
+  <data name="FormColourDifference_DateTime" xml:space="preserve">
+    <value>Date/Time</value>
+  </data>
+  <data name="FormColourDifference_DECMC21" xml:space="preserve">
+    <value>CMC(2:1)</value>
+  </data>
+  <data name="FormColourDifference_DEHUNTER" xml:space="preserve">
+    <value>ΔE*hunter</value>
+  </data>
+  <data name="FormColourDifference_DeviceBusy" xml:space="preserve">
+    <value>Device busy</value>
+    <comment>Error code description</comment>
+  </data>
+  <data name="FormColourDifference_DeviceNotFound" xml:space="preserve">
+    <value>Device not found</value>
+    <comment>Error code description</comment>
+  </data>
+  <data name="FormColourDifference_DeviceNotOpen" xml:space="preserve">
+    <value>Device not open</value>
+    <comment>Error code description</comment>
+  </data>
+  <data name="FormColourDifference_Difference" xml:space="preserve">
+    <value>Difference</value>
+  </data>
+  <data name="FormColourDifference_DIN_E99" xml:space="preserve">
+    <value>ΔE*99</value>
+  </data>
+  <data name="FormColourDifference_DIN_LAB99" xml:space="preserve">
+    <value>DIN99 Lab</value>
+    <comment>ColorSpace</comment>
+  </data>
+  <data name="FormColourDifference_Disconnect" xml:space="preserve">
+    <value>Disconnect</value>
+    <comment>button name</comment>
+  </data>
+  <data name="FormColourDifference_GARDNER_INDEX" xml:space="preserve">
+    <value>Gardner Index</value>
+  </data>
+  <data name="FormColourDifference_GLOSS_8" xml:space="preserve">
+    <value>Gloss 8°</value>
+  </data>
+  <data name="FormColourDifference_HUE_CLASSIFY_555" xml:space="preserve">
+    <value>Shade 555</value>
+  </data>
+  <data name="FormColourDifference_HUNTERLAB" xml:space="preserve">
+    <value>Hunter Lab</value>
+    <comment>ColorSpace</comment>
+  </data>
+  <data name="FormColourDifference_Illuminant" xml:space="preserve">
+    <value>Illuminant</value>
+  </data>
+  <data name="FormColourDifference_INVALID" xml:space="preserve">
+    <value>Invalid</value>
+  </data>
+  <data name="FormColourDifference_InvalidArgument" xml:space="preserve">
+    <value>Invalid argument</value>
+    <comment>Error code description</comment>
+  </data>
+  <data name="FormColourDifference_InvalidPacket" xml:space="preserve">
+    <value>Invalid data packet</value>
+    <comment>Error code description</comment>
+  </data>
+  <data name="FormColourDifference_Item" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="FormColourDifference_LAsterisk" xml:space="preserve">
+    <value>L*</value>
+  </data>
+  <data name="FormColourDifference_Manual" xml:space="preserve">
+    <value>Manual</value>
+    <comment>LensSwitchMode</comment>
+  </data>
+  <data name="FormColourDifference_METAMERISM_INDIEX" xml:space="preserve">
+    <value>MI</value>
+  </data>
+  <data name="FormColourDifference_MUNSELL" xml:space="preserve">
+    <value>Munsell</value>
+    <comment>ColorSpace</comment>
+  </data>
+  <data name="FormColourDifference_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="FormColourDifference_NoError" xml:space="preserve">
+    <value>No error</value>
+    <comment>Error code description</comment>
+  </data>
+  <data name="FormColourDifference_NotEnoughStorage" xml:space="preserve">
+    <value>The storage is not enough</value>
+    <comment>Error code description</comment>
+  </data>
+  <data name="FormColourDifference_Observer" xml:space="preserve">
+    <value>Observer</value>
+  </data>
+  <data name="FormColourDifference_OPACITY" xml:space="preserve">
+    <value>Opacity</value>
+  </data>
+  <data name="FormColourDifference_OpenDeviceFailed" xml:space="preserve">
+    <value>Open device failed</value>
+    <comment>Error code description</comment>
+  </data>
+  <data name="FormColourDifference_Phi15" xml:space="preserve">
+    <value>Φ15mm</value>
+    <comment>Aperture</comment>
+  </data>
+  <data name="FormColourDifference_Phi25" xml:space="preserve">
+    <value>Φ25.4mm</value>
+    <comment>Aperture</comment>
+  </data>
+  <data name="FormColourDifference_Phi4" xml:space="preserve">
+    <value>Φ4mm</value>
+    <comment>Aperture</comment>
+  </data>
+  <data name="FormColourDifference_Phi8" xml:space="preserve">
+    <value>Φ8mm</value>
+    <comment>Aperture</comment>
+  </data>
+  <data name="FormColourDifference_PleaseSelectAPortName" xml:space="preserve">
+    <value>Please select a port name</value>
+  </data>
+  <data name="FormColourDifference_Pos15" xml:space="preserve">
+    <value>15mm</value>
+    <comment>LensPos</comment>
+  </data>
+  <data name="FormColourDifference_Pos25" xml:space="preserve">
+    <value>25.4mm</value>
+    <comment>LensPos</comment>
+  </data>
+  <data name="FormColourDifference_Pos4" xml:space="preserve">
+    <value>4mm</value>
+    <comment>LensPos</comment>
+  </data>
+  <data name="FormColourDifference_Pos8" xml:space="preserve">
+    <value>8mm</value>
+    <comment>LensPos</comment>
+  </data>
+  <data name="FormColourDifference_PT_CO_INDEX" xml:space="preserve">
+    <value>Pt-CO</value>
+  </data>
+  <data name="FormColourDifference_RecvTimeout" xml:space="preserve">
+    <value>Receiving timeout</value>
+    <comment>Error code description</comment>
+  </data>
+  <data name="FormColourDifference_Reflective" xml:space="preserve">
+    <value>Reflective</value>
+  </data>
+  <data name="FormColourDifference_RemoteError" xml:space="preserve">
+    <value>Execute command failed</value>
+    <comment>Error code description</comment>
+  </data>
+  <data name="FormColourDifference_Sample" xml:space="preserve">
+    <value>Sample</value>
+  </data>
+  <data name="FormColourDifference_SampleX" xml:space="preserve">
+    <value>Sample {0}</value>
+    <comment>MenuItem</comment>
+  </data>
+  <data name="FormColourDifference_SCE" xml:space="preserve">
+    <value>SCE</value>
+    <comment>ScMode</comment>
+  </data>
+  <data name="FormColourDifference_SCI" xml:space="preserve">
+    <value>SCI</value>
+    <comment>ScMode</comment>
+  </data>
+  <data name="FormColourDifference_SCI_AND_SCE" xml:space="preserve">
+    <value>SCI+SCE</value>
+    <comment>ScMode</comment>
+  </data>
+  <data name="FormColourDifference_SendTimeout" xml:space="preserve">
+    <value>Sending timeout</value>
+    <comment>Error code description</comment>
+  </data>
+  <data name="FormColourDifference_SpectralType" xml:space="preserve">
+    <value>R%/T%</value>
+    <comment>Reflective/Transitive</comment>
+  </data>
+  <data name="FormColourDifference_SRGB" xml:space="preserve">
+    <value>sRGB</value>
+    <comment>ColorSpace</comment>
+  </data>
+  <data name="FormColourDifference_STAINING_FASTNESS" xml:space="preserve">
+    <value>Staining Fastness</value>
+  </data>
+  <data name="FormColourDifference_Standard" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="FormColourDifference_STRENGTH" xml:space="preserve">
+    <value>Strength</value>
+  </data>
+  <data name="FormColourDifference_Transitive" xml:space="preserve">
+    <value>Transitive</value>
+  </data>
+  <data name="FormColourDifference_Uncalibrated" xml:space="preserve">
+    <value>Uncalibrated</value>
+    <comment>Error code description</comment>
+  </data>
+  <data name="FormColourDifference_UnexpectCommand" xml:space="preserve">
+    <value>Invalid command code</value>
+    <comment>Error code description</comment>
+  </data>
+  <data name="FormColourDifference_WhiteCalibrationCompleted" xml:space="preserve">
+    <value>White calibration completed</value>
+  </data>
+  <data name="FormColourDifference_WHITENESS" xml:space="preserve">
+    <value>Whiteness</value>
+  </data>
+  <data name="FormColourDifference_YELLOWNESS" xml:space="preserve">
+    <value>Yellowness</value>
+  </data>
+</root>

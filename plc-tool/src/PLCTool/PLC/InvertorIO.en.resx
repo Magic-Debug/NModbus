@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PLC1I0_0" xml:space="preserve">
+    <value>Encoder A phase</value>
+  </data>
+  <data name="PLC1I0_1" xml:space="preserve">
+    <value>Encoder B phase</value>
+  </data>
+  <data name="PLC1I0_2" xml:space="preserve">
+    <value>X-axis positive limit</value>
+  </data>
+  <data name="PLC1I0_3" xml:space="preserve">
+    <value>X-axis negative limit</value>
+  </data>
+  <data name="PLC1I0_4" xml:space="preserve">
+    <value>X-axis origin</value>
+  </data>
+  <data name="PLC1I0_5" xml:space="preserve">
+    <value>Z-axis positive limit</value>
+  </data>
+  <data name="PLC1I0_6" xml:space="preserve">
+    <value>Z-axis negative limit</value>
+  </data>
+  <data name="PLC1I0_7" xml:space="preserve">
+    <value>Z-axis origin</value>
+  </data>
+  <data name="PLC1I1_0" xml:space="preserve">
+    <value>A-axis positive limit</value>
+  </data>
+  <data name="PLC1I1_1" xml:space="preserve">
+    <value>A-axis negative limit</value>
+  </data>
+  <data name="PLC1I1_2" xml:space="preserve">
+    <value>A-axis origin</value>
+  </data>
+  <data name="PLC1I1_3" xml:space="preserve">
+    <value>Emergency stop</value>
+  </data>
+  <data name="PLC1I1_4" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="PLC1I1_5" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="PLC1I1_6" xml:space="preserve">
+    <value>Return to zero</value>
+  </data>
+  <data name="PLC1I1_7" xml:space="preserve">
+    <value>No cloth detection at unwinding</value>
+  </data>
+  <data name="PLC1I2_0" xml:space="preserve">
+    <value>Lower limit of unwinding</value>
+  </data>
+  <data name="PLC1I2_1" xml:space="preserve">
+    <value>Feeding cloth without cloth detection</value>
+  </data>
+  <data name="PLC1I2_2" xml:space="preserve">
+    <value>Lower limit detection</value>
+  </data>
+  <data name="PLC1I2_3" xml:space="preserve">
+    <value>Extend the front limit of the cylinder</value>
+  </data>
+  <data name="PLC1I2_4" xml:space="preserve">
+    <value>Extend the rear limit of the cylinder</value>
+  </data>
+  <data name="PLC1I2_5" xml:space="preserve">
+    <value>Volume label in place detection</value>
+  </data>
+  <data name="PLC1I2_6" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="PLC1I2_7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1I3_0" xml:space="preserve">
+    <value>Active roller servo alarm</value>
+  </data>
+  <data name="PLC1I3_1" xml:space="preserve">
+    <value>Inspection station servo alarm</value>
+  </data>
+  <data name="PLC1I3_2" xml:space="preserve">
+    <value>Feeding station into the cloth roller inverter alarm</value>
+  </data>
+  <data name="PLC1I3_3" xml:space="preserve">
+    <value>Feeding station splitting roller inverter alarm</value>
+  </data>
+  <data name="PLC1I3_4" xml:space="preserve">
+    <value>Winding station winding roller inverter alarm</value>
+  </data>
+  <data name="PLC1I3_5" xml:space="preserve">
+    <value>Winding station split roller inverter alarm</value>
+  </data>
+  <data name="PLC1I3_6" xml:space="preserve">
+    <value>Unwinding station drive roller inverter alarm</value>
+  </data>
+  <data name="PLC1I3_7" xml:space="preserve">
+    <value>Arranging the inverter alarm</value>
+  </data>
+  <data name="PLC1I4_0" xml:space="preserve">
+    <value>Winding correction alarm</value>
+  </data>
+  <data name="PLC1I4_1" xml:space="preserve">
+    <value>Winding correction alarm</value>
+  </data>
+  <data name="PLC1I4_2" xml:space="preserve">
+    <value>Spindle servo alarm</value>
+  </data>
+  <data name="PLC1I4_3" xml:space="preserve">
+    <value>Tension servo alarm</value>
+  </data>
+  <data name="PLC1I4_4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1I4_5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1I4_6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1I4_7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1I5_0" xml:space="preserve">
+    <value>收卷纠偏报警</value>
+  </data>
+  <data name="PLC1I5_1" xml:space="preserve">
+    <value>收卷纠偏报警</value>
+  </data>
+  <data name="PLC1I5_2" xml:space="preserve">
+    <value>主轴伺服报警</value>
+  </data>
+  <data name="PLC1I5_3" xml:space="preserve">
+    <value>张力伺服报警</value>
+  </data>
+  <data name="PLC1I5_4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1I5_5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1I5_6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1I5_7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q0_0" xml:space="preserve">
+    <value>X-axis pulse</value>
+  </data>
+  <data name="PLC1Q0_1" xml:space="preserve">
+    <value>Z-axis pulse</value>
+  </data>
+  <data name="PLC1Q0_2" xml:space="preserve">
+    <value>X-axis direction</value>
+  </data>
+  <data name="PLC1Q0_3" xml:space="preserve">
+    <value>A-axis pulse</value>
+  </data>
+  <data name="PLC1Q0_4" xml:space="preserve">
+    <value>X axis enable</value>
+  </data>
+  <data name="PLC1Q0_5" xml:space="preserve">
+    <value>Z axis enable</value>
+  </data>
+  <data name="PLC1Q0_6" xml:space="preserve">
+    <value>A-axis enable</value>
+  </data>
+  <data name="PLC1Q0_7" xml:space="preserve">
+    <value>Z-axis direction</value>
+  </data>
+  <data name="PLC1Q1_0" xml:space="preserve">
+    <value>A-axis direction</value>
+  </data>
+  <data name="PLC1Q1_1" xml:space="preserve">
+    <value>Tricolor lamp - green</value>
+  </data>
+  <data name="PLC1Q1_2" xml:space="preserve">
+    <value>Tricolor lamp - yellow</value>
+  </data>
+  <data name="PLC1Q1_3" xml:space="preserve">
+    <value>Tricolor lamp - red</value>
+  </data>
+  <data name="PLC1Q1_4" xml:space="preserve">
+    <value>Tricolor lamp - buzzer</value>
+  </data>
+  <data name="PLC1Q1_5" xml:space="preserve">
+    <value>Split-edge DC motor 1</value>
+  </data>
+  <data name="PLC1Q1_6" xml:space="preserve">
+    <value>Split-edge DC motor 2</value>
+  </data>
+  <data name="PLC1Q1_7" xml:space="preserve">
+    <value>Right to start and stop</value>
+  </data>
+  <data name="PLC1Q2_0" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q2_1" xml:space="preserve">
+    <value>Vacuum solenoid valve</value>
+  </data>
+  <data name="PLC1Q2_2" xml:space="preserve">
+    <value>Cylinder solenoid valve</value>
+  </data>
+  <data name="PLC1Q2_3" xml:space="preserve">
+    <value>Reset output</value>
+  </data>
+  <data name="PLC1Q2_4" xml:space="preserve">
+    <value>Corrector automatic</value>
+  </data>
+  <data name="PLC1Q2_5" xml:space="preserve">
+    <value>Corrector back</value>
+  </data>
+  <data name="PLC1Q2_6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q2_7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q3_0" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q3_1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q3_2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q3_3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q3_4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q3_5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q3_6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC1Q3_7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I0_0" xml:space="preserve">
+    <value>Unwinding servo positive limit</value>
+  </data>
+  <data name="PLC2I0_1" xml:space="preserve">
+    <value>Unwinding servo negative limit</value>
+  </data>
+  <data name="PLC2I0_2" xml:space="preserve">
+    <value>Unwinding servo origin</value>
+  </data>
+  <data name="PLC2I0_3" xml:space="preserve">
+    <value>Winding servo positive limit</value>
+  </data>
+  <data name="PLC2I0_4" xml:space="preserve">
+    <value>Winding servo negative limit</value>
+  </data>
+  <data name="PLC2I0_5" xml:space="preserve">
+    <value>Winding servo origin</value>
+  </data>
+  <data name="PLC2I0_6" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="PLC2I0_7" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="PLC2I1_0" xml:space="preserve">
+    <value>Winding sensor 1-1</value>
+  </data>
+  <data name="PLC2I1_1" xml:space="preserve">
+    <value>Winding sensor 1-2</value>
+  </data>
+  <data name="PLC2I1_2" xml:space="preserve">
+    <value>Unwinding sensor 1-1</value>
+  </data>
+  <data name="PLC2I1_3" xml:space="preserve">
+    <value>Unwinding sensor 1-2</value>
+  </data>
+  <data name="PLC2I1_4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I1_5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I1_6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I1_7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I2_0" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I2_1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I2_2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I2_3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I2_4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I2_5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I2_6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2I2_7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q0_0" xml:space="preserve">
+    <value>Unwinding pulse</value>
+  </data>
+  <data name="PLC2Q0_1" xml:space="preserve">
+    <value>Winding pulse</value>
+  </data>
+  <data name="PLC2Q0_2" xml:space="preserve">
+    <value>Unwinding direction</value>
+  </data>
+  <data name="PLC2Q0_3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q0_4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q0_5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q0_6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q0_7" xml:space="preserve">
+    <value>Winding direction</value>
+  </data>
+  <data name="PLC2Q1_0" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q1_1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q1_2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q1_3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q1_4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q1_5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q1_6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLC2Q1_7" xml:space="preserve">
+    <value />
+  </data>
+</root>
